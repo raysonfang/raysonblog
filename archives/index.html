@@ -1,305 +1,394 @@
 <!DOCTYPE html>
 <html>
-  <head><meta name="generator" content="Hexo 3.8.0">
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no,email=no,adress=no">
+  <!-- Color theme for statusbar -->
+  <meta name="theme-color" content="#000000">
+  <!-- 强制页面在当前窗口以独立页面显示,防止别人在框架里调用页面 -->
+  <meta http-equiv="window-target" content="_top">
+  
+  
+  <title>Archive | Hexo</title>
   <meta name="description" content="Rayson开发分享">
-  <meta name="keyword" content="hexo-theme, vuejs, java个人博客, 源码分析, 架构设计">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rayson开发分享">
+<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:site_name" content="Rayson开发分享">
+<meta property="og:description" content="Rayson开发分享">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Rayson开发分享">
+<meta name="twitter:description" content="Rayson开发分享">
+  <!-- Canonical links -->
+  <link rel="canonical" href="http://yoursite.com/archives/index.html">
   
-    <link rel="shortcut icon" type="image/ico" href="./css/images/logo.png">
+    <link rel="alternate" href="/atom.xml" title="Rayson开发分享" type="application/atom+xml">
   
-  <title>
-    
-      Rayson开发分享
-    
-  </title>
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow.min.css" rel="stylesheet">
+  
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  
   <link rel="stylesheet" href="/raysonblog.github.io/css/style.css">
   
-     <link rel="stylesheet" href="/raysonblog.github.io/css/plugins/gitment.css">
-  
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/geopattern/1.2.3/js/geopattern.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
-  
-    <script src="/raysonblog.github.io/js/qrious.js"></script>
-  
-  
-    <script src="/raysonblog.github.io/js/gitment.js"></script>
   
   
   
-    <!-- MathJax support START -->
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <!-- MathJax support END -->
-  
-
-
 </head>
-<div class="wechat-share">
-  <img src="/css/images/logo.png">
+
+
+<body class="main-center" itemscope itemtype="http://schema.org/WebPage">
+  <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+  <div class="slimContent">
+    <div class="navbar-header">
+      
+      
+      <div class="profile-block text-center">
+        <a id="avatar" href="https://github.com/cofess" target="_blank">
+          <img class="img-circle img-rotate" src="/raysonblog.github.io/images/avatar.jpg" width="200" height="200">
+        </a>
+        <h2 id="name" class="hidden-xs hidden-sm">昵称</h2>
+        <h3 id="title" class="hidden-xs hidden-sm hidden-md">Web Developer &amp; Designer</h3>
+        <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i> Shenzhen, China</small>
+      </div>
+      
+      <div class="search" id="search-form-wrap">
+
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search">
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i class="icon icon-search"></i></button>
+            </span>
+        </div>
+    </form>
+    <div class="ins-search">
+  <div class="ins-search-mask"></div>
+  <div class="ins-search-container">
+    <div class="ins-input-wrapper">
+      <input type="text" class="ins-search-input" placeholder="Type something..." x-webkit-speech>
+      <button type="button" class="close ins-close ins-selectable" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+    </div>
+    <div class="ins-section-wrapper">
+      <div class="ins-section-container"></div>
+    </div>
+  </div>
 </div>
 
-  <body>
-    <header class="header fixed-header">
-  <div class="header-container">
-    <a class="home-link" href="/raysonblog.github.io/">
-      <div class="logo"></div>
-      <span>Rayson开发分享</span>
-    </a>
-    <ul class="right-list">
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/" class="item-link">首页</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/sources/" class="item-link">源码分析</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/struct/" class="item-link">架构设计</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/tools/" class="item-link">精美工具</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/interview/" class="item-link">面试集锦</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/function/" class="item-link">算法结构</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/debug/" class="item-link">调试技巧</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/tags/" class="item-link">标签</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/archives/" class="item-link">归档</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/project/" class="item-link">开源项目</a>
-          
-        </li>
-      
-        <li class="list-item">
-          
-            <a href="/raysonblog.github.io/about/" class="item-link">关于</a>
-          
-        </li>
-      
-    </ul>
-    <div class="menu">
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
+
+</div>
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
     </div>
-    <div class="menu-mask">
-      <ul class="menu-list">
+    <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+      <ul class="nav navbar-nav main-nav ">
         
-          <li class="menu-item">
-            
-              <a href="/raysonblog.github.io/" class="menu-link">首页</a>
-            
-          </li>
         
-          <li class="menu-item">
+        <li class="menu-item menu-item-home">
+          <a href="/raysonblog.github.io/.">
             
-              <a href="/raysonblog.github.io/sources/" class="menu-link">源码分析</a>
+            <i class="icon icon-home-fill"></i>
             
-          </li>
+            <span class="menu-title">Home</span>
+          </a>
+        </li>
         
-          <li class="menu-item">
-            
-              <a href="/raysonblog.github.io/struct/" class="menu-link">架构设计</a>
-            
-          </li>
         
-          <li class="menu-item">
+        <li class="menu-item menu-item-archives">
+          <a href="/raysonblog.github.io/archives">
             
-              <a href="/raysonblog.github.io/tools/" class="menu-link">精美工具</a>
+            <i class="icon icon-archives-fill"></i>
             
-          </li>
+            <span class="menu-title">Archives</span>
+          </a>
+        </li>
         
-          <li class="menu-item">
-            
-              <a href="/raysonblog.github.io/interview/" class="menu-link">面试集锦</a>
-            
-          </li>
         
-          <li class="menu-item">
+        <li class="menu-item menu-item-categories">
+          <a href="/raysonblog.github.io/categories">
             
-              <a href="/raysonblog.github.io/function/" class="menu-link">算法结构</a>
+            <i class="icon icon-folder"></i>
             
-          </li>
+            <span class="menu-title">Categories</span>
+          </a>
+        </li>
         
-          <li class="menu-item">
-            
-              <a href="/raysonblog.github.io/debug/" class="menu-link">调试技巧</a>
-            
-          </li>
         
-          <li class="menu-item">
+        <li class="menu-item menu-item-tags">
+          <a href="/raysonblog.github.io/tags">
             
-              <a href="/raysonblog.github.io/tags/" class="menu-link">标签</a>
+            <i class="icon icon-tags"></i>
             
-          </li>
+            <span class="menu-title">Tags</span>
+          </a>
+        </li>
         
-          <li class="menu-item">
-            
-              <a href="/raysonblog.github.io/archives/" class="menu-link">归档</a>
-            
-          </li>
         
-          <li class="menu-item">
+        <li class="menu-item menu-item-repository">
+          <a href="/raysonblog.github.io/repository">
             
-              <a href="/raysonblog.github.io/project/" class="menu-link">开源项目</a>
+            <i class="icon icon-project"></i>
             
-          </li>
+            <span class="menu-title">Repository</span>
+          </a>
+        </li>
         
-          <li class="menu-item">
+        
+        <li class="menu-item menu-item-books">
+          <a href="/raysonblog.github.io/books">
             
-              <a href="/raysonblog.github.io/about/" class="menu-link">关于</a>
+            <i class="icon icon-book-fill"></i>
             
-          </li>
+            <span class="menu-title">Books</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-links">
+          <a href="/raysonblog.github.io/links">
+            
+            <i class="icon icon-friendship"></i>
+            
+            <span class="menu-title">Links</span>
+          </a>
+        </li>
+        
+        
+        <li class="menu-item menu-item-about">
+          <a href="/raysonblog.github.io/about">
+            
+            <i class="icon icon-cup-fill"></i>
+            
+            <span class="menu-title">About</span>
+          </a>
+        </li>
         
       </ul>
-    </div>
+      
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle="tooltip" data-placement="top"><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle="tooltip" data-placement="top"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle="tooltip" data-placement="top"><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/raysonblog.github.io/atom.xml" target="_blank" title="Rss" data-toggle="tooltip" data-placement="top"><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    </nav>
   </div>
 </header>
 
-    <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">文章归档</p>
+  
+    <aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title">Board</h3>
+    <div class="widget-body">
+        <div id="board">
+            <div class="content">
+                <p>欢迎交流与分享经验!</p>
+            </div>
+        </div>
+    </div>
 </div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2019
-  </h1>
-  <div class="section-list">
+
     
+      
+
     
-      <div class="section-list-item">
-        <a href="/raysonblog.github.io/2019/05/19/我的第一篇博客/" class="archive-title">我的第一篇博客</a>
-        <p class="archive-date">05-19</p>
-      </div>
+      
+
     
-      <div class="section-list-item">
-        <a href="/raysonblog.github.io/2019/05/18/hello-world/" class="archive-title">Hello World</a>
-        <p class="archive-date">05-18</p>
-      </div>
+      
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Archive</h3>
+    <div class="widget-body">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/raysonblog.github.io/archives/2019/05/">May 2019</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget-body">
+      <ul class="recent-post-list list-unstyled no-thumbnail">
+        
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/raysonblog.github.io/2019/05/19/我的第一篇博客/" class="title">我的第一篇博客</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-05-19T11:11:23.000Z" itemprop="datePublished">2019-05-19</time>
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/raysonblog.github.io/2019/05/18/hello-world/" class="title">Hello World</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2019-05-18T15:23:08.315Z" itemprop="datePublished">2019-05-18</time>
+              </p>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+  </div>
+  
+
     
   </div>
-</section>
+</aside>
+
   
+  
+<main class="main" role="main">
+  	<article class="content article article-archives article-type-list" itemscope>
+	    <header class="article-header">
+	      <h1 itemprop="title">Archive</h1>
+	      <p class="text-muted">Total 2 articles</p>
+	    </header>
+	    <div class="article-body">
+	      
+  
+  
+    
+    
+      
+      
+      <section class="panel panel-default b-no">
+        <div class="panel-heading" role="tab">
+          <h3 class="panel-title">
+            <a data-toggle="collapse" href="#collapse2019" aria-expanded="true">
+              <i class="icon icon-calendar-plus text-active"></i><i class="icon icon-calendar-minus text"></i>
+              2019
+            </a>
+            <!-- <a href="/raysonblog.github.io/archives/2019" class="archive-year">2019</a> -->
+          </h3>
+        </div>
+        <div id="collapse2019" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2019">
+        <div class="panel-body">
+          <div class="collection">
+    
+    
+<a href="/raysonblog.github.io/2019/05/19/我的第一篇博客/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2019-05-19T11:11:23.000Z" itemprop="datePublished">2019-05-19</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> 我的第一篇博客
+</a>
+
+
+  
+    
+    
+    
+<a href="/raysonblog.github.io/2019/05/18/hello-world/" class="collection-item" target="_blank" itemprop="url">
+  <time datetime="2019-05-18T15:23:08.315Z" itemprop="datePublished">2019-05-18</time>
+  <span>&nbsp;&nbsp;&nbsp;</span> Hello World
+</a>
+
+
+  
+  
+    </div></div></div></section>
+  
+
+	    </div>
+  	</article>
+  	 	
 </main>
 
-<script>
-  (function () {
-    var url = 'http://yoursite.com/archives/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
-  })();
-</script>
-    <div class="scroll-top">
-  <span class="arrow-icon"></span>
-</div>
-    <footer class="app-footer">
-  <p class="copyright">
-    &copy; 2019 | Proudly powered by <a href="https://hexo.io" target="_blank">Hexo</a>
-    <br>
-    Theme by <a href="https://github.com/yanm1ng">yanm1ng</a>
-  </p>
+  <footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+	
+	
+    <ul class="social-links">
+    	
+        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle="tooltip" data-placement="top"><i class="icon icon-github"></i></a></li>
+        
+        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle="tooltip" data-placement="top"><i class="icon icon-weibo"></i></a></li>
+        
+        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle="tooltip" data-placement="top"><i class="icon icon-twitter"></i></a></li>
+        
+        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle="tooltip" data-placement="top"><i class="icon icon-behance"></i></a></li>
+        
+        <li><a href="/raysonblog.github.io/atom.xml" target="_blank" title="Rss" data-toggle="tooltip" data-placement="top"><i class="icon icon-rss"></i></a></li>
+        
+    </ul>
+
+    <div class="copyright">
+    	
+        <div class="publishby">
+        	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
+        </div>
+    </div>
 </footer>
-
+  <script src="//cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 <script>
-  function async(u, c) {
-    var d = document, t = 'script',
-      o = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    o.src = u;
-    if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-    s.parentNode.insertBefore(o, s);
-  }
+window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 </script>
-<script>
-  async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function(){
-    FastClick.attach(document.body);
-  })
-</script>
+<script src="/raysonblog.github.io/js/plugin.min.js"></script>
+<script src="/raysonblog.github.io/js/application.js"></script>
 
-<script>
-  var hasLine = 'true';
-  async("//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js", function(){
-    $('figure pre').each(function(i, block) {
-      var figure = $(this).parents('figure');
-      if (hasLine === 'false') {
-        figure.find('.gutter').hide();
-      }
-      var lang = figure.attr('class').split(' ')[1] || 'code';
-      var codeHtml = $(this).html();
-      var codeTag = document.createElement('code');
-      codeTag.className = lang;
-      codeTag.innerHTML = codeHtml;
-      $(this).attr('class', '').empty().html(codeTag);
-      figure.attr('data-lang', lang.toUpperCase());
-      hljs.highlightBlock(block);
-    });
-  })
+    <script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/raysonblog.github.io/',
+        CONTENT_URL: '/raysonblog.github.io/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
-<!-- Baidu Tongji -->
+<script src="/raysonblog.github.io/js/insight.js"></script>
 
-<script src="/raysonblog.github.io/js/script.js"></script>
-  </body>
+
+
+
+
+
+
+
+
+
+
+</body>
 </html>
