@@ -36,6 +36,13 @@ body {
   margin: 0;
 }
 
+.main-center{
+width:1366px;
+height:457px;
+MARGIN-RIGHT: auto;
+MARGIN-LEFT: auto;
+}
+
 article,
 aside,
 details,
