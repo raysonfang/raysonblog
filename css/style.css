@@ -139,7 +139,6 @@ code {
 }
 .outer {
   max-width: 1600px;
-  height: 65px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -384,6 +383,9 @@ code {
 .header-inner {
   height: 100%;
   position: relative;
+}
+.header-inner .outer {
+  height: 65px;
 }
 .header-inner #logo {
   display: inline-block;
