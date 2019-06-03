@@ -2119,6 +2119,10 @@ ol.toc {
   padding-right: 20px;
   background-color: transparent;
 }
+.highlight .code pre {
+  color: #c4c3be;
+  background-color: transparent;
+}
 .article-entry .highlight {
   margin: 1.6em 0;
 }
@@ -2170,7 +2174,7 @@ ol.toc {
 .highlight .code .quote,
 .highlight .code .deletion,
 .highlight .code .meta {
-  color: #75715e;
+  color: #838cf7;
 }
 .highlight .code .keyword,
 .highlight .code .selector-tag,
