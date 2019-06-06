@@ -213,10 +213,12 @@
                 → 网上去下载，又担心下载下来的，会有各种捆绑软件安装包，莫名其妙的多了很多垃圾软件。<br>
                 <br><strong>在这里，我冒死推荐...</strong><br>
                 收集整理常用的工具，并记录用途，可以方便日后快速查阅。<br>
-                如果有好的工具推荐，欢迎联系我。由衷的感谢您。
+                如果有好的工具推荐，欢迎联系我。<br>
+                由衷的感谢，在此和你结缘，是我莫大的荣幸。<br>
+                也许在未来的某个时刻，你忘记曾经用过的软件放到哪里或者忘叫什么名字，没关系，只要您记得这里就行。
             </div>
-            <div class="index-card-footer" style="text-align: right;">
-                <a href="/about">联系我</a>
+            <div class="index-card-footer" style="text-align: right;margin-top: 10px;">
+                <a href="/about">您有好的工具推荐,联系我</a>
             </div>
         </div>
     </div>
@@ -224,24 +226,8 @@
 <div id="tools-list">
 
 </div>
-<div class="row">
-    <div class="col-md-12">
-        <div class="index-card">
-            <div class="index-card-head">
-                <h3>编号001：Postman</h3>
-            </div>
-            <div class="index-card-body">
-                接口调试必备工具，作为一名程序员，也必须会使用。
-            </div>
-            <div class="index-card-footer" style="text-align: right;">
-                <a href="/about">了解更多</a>
-                <a href="/about">官网下载最新版</a>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!--Github项模版-->
+<!--工具选项模版-->
 <script type="text/template" id="list-template">
     <div class="row">
         <div class="col-md-12">
@@ -281,14 +267,25 @@
 
             $.get("/json/tools.json", function(result) {
                 if (result) {
+                    result = result.list;
                     errorContainer.remove();
                     countContainer.text(result.length); //设置项目个数
                     var tool = $("<div class='tool-list'></div>");
+                    var tuijian = $("<div class='tuijian-list'></div>");
+                    var zuixin = $("<div class='zuixin-list'></div>");
                     for (var i in result) {
                         var repo = result[i];
                         var html = baiduTpl.list(repo);
-                        tool.append(html);
+                        if(repo.state == 1){ // 推荐
+                            tuijian.append(html);
+                        }else if(repo.state == 2){ // 最新
+                            zuixin.append(html);
+                        }else{
+                            tool.append(html);
+                        }
                     }
+                    toolsContainer.append(tuijian);
+                    toolsContainer.append(zuixin);
                     toolsContainer.append(tool);
                     $(".geopattern").each(function() {
                         $(this).geopattern($(this).data('pattern-id'));
