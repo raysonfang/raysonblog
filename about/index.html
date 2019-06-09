@@ -79,7 +79,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -98,10 +98,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -138,7 +138,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
     </div>
 
                 </td>
@@ -149,172 +149,181 @@
 
         <div class="outer row">
             
-            <section id="main" class="col-lg-9"><article id="about-" class="article article-type-about" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 class="article-title" itemprop="name">
-            About
-        </h1>
-    
+            <section id="main" class="col-lg-9"><style>
+    .row {
+        margin-top: 15px;
+    }
 
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-warning" style="font-size: 14px">转载</span>
-    </div>
+    .index-card {
+        padding: 15px;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
 
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/about/index.html">
-            <time datetime="2019-05-19T10:56:09.836Z" itemprop="datePublished">2019-05-19</time>
-        </a>
-    </div>
+    .index-card-head {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eceff2;
+        color: #009688;
+    }
 
+    .index-card-body {
 
-                        
+    }
 
-                        
-                        
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            
-        
-        
+    .index-card-body-list {
+        display: block;
+        margin-bottom: 7px;
+        justify-content: space-between;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .index-card-body-list a {
+        color: grey;
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .index-card-body-list a:hover {
+        color: dodgerblue;
+    }
+
+    /*.index-card-footer {*/
+    /*font-size: 0.85em;*/
+    /*line-height: 1.6em;*/
+    /*border-top: 1px solid #eceff2;*/
+    /*padding-top: 5px;*/
+    /*margin-top: 20px;*/
+    /*}*/
+    .timeline-wrap {
+        margin: 20px 20px 30px 20px;
+    }
+</style>
+<div class="row">
+    <div class="col-md-12">
+        <div class="index-card">
+            <div class="index-card-head">
+                <h3>关于我</h3>
+            </div>
+            <div class="index-card-body">
+                写我所想，所思。按照自己喜欢的方式做喜欢的事。
+            </div>
+            <div class="index-card-footer" style="text-align: right;margin-top: 10px;">
+                <a href="/about">您有好的工具推荐,联系我</a>
+            </div>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="timeline timeline-wrap">
+            <div class="timeline-row timeline-row-major">
+                <span class="node" style="-webkit-box-sizing: content-box;-moz-box-sizing: content-box;box-sizing: content-box;"><i class="fa fa-calendar"></i></span>
+                <h1 class="title">把握精彩时光</h1>
+            </div>
+            <div class="timeline-row">
+                <span class="node"></span>
+                <div class="content">
+                    <h1 itemprop="name">
+                        <a class="timeline-article-title" href="#" itemprop="url">2019</a>
+                    </h1>
 
-        <footer class="article-footer">
-            <div class="col-sm-10">
-                <div>
-                    <b>本文链接</b>：<a href="/about/index.html">About</a>
-                </div>
-                <div>
-                    
-                        转载声明：本博客由三哥创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"> CC BY 3.0 CN </a> 许可协议。可自由转载、引用，但需署名作者且注明文章出处。如转载至微信公众号，请在文末添加作者公众号二维码。
-                    
-                </div>
-                <div>
-                    
+                    <div class="article-meta">
+                        处理博客搭建
+                    </div>
                 </div>
             </div>
-            <div class="col-sm-2">
-                <div class="share-container">
 
-
-
+        </div>
+    </div>
 </div>
+<!--<div id="tools-list">-->
 
-    <a data-url="http://www.raysonblog.cn/about/index.html" data-id="cjwp1g3ya0001rost81lyjz6t" class="article-share-link"><i class="fa fa-share"></i>Share</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
+<!--</div>-->
 
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
+<!--工具选项模版-->
+<script type="text/template" id="list-template">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="index-card">
+                <div class="index-card-head">
+                    <h3>编号{%=uid%}：{%=name%}</h3>
+                </div>
+                <div class="index-card-body">
+                    {%=description%}
+                </div>
+                <div class="index-card-footer" style="text-align: right;">
+                    {% for(var j = 0; j < links.length; j++){ %}
+                    <a href="{%=links[j].link%}">{%=links[j].action%}</a>
+                    {% } %}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<!--获取失败模版-->
+<script type="text/template" id="error-template">
+    <h3>加载失败</h3><p>请刷新或稍后再试...</p>
 </script>
 
-                
-    
-        <a href="http://www.raysonblog.cn/about/index.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.raysonblog.cn/about/index.html">Comments</a>
-    
+<script type="text/javascript">
+    var open = function() {
+        var baiduTpl = new Object();
+        var handleTpl = function() {
+            baiduTpl.list = baidu.template("list-template");
+            baiduTpl.error = baidu.template("error-template");
+        };
 
-            </div>
+        var handleGithub = function() {
+            var toolsContainer = $('#tools-list');
+            var errorContainer = toolsContainer.find(".blankslate");
+            var countContainer = $("#repo-count");
 
-        </footer>
-    </div>
-    
-        
+            $.get("/json/tools.json", function(result) {
+                if (result) {
+                    result = result.list;
+                    errorContainer.remove();
+                    countContainer.text(result.length); //设置项目个数
+                    var tool = $("<div class='tool-list'></div>");
+                    var tuijian = $("<div class='tuijian-list'></div>");
+                    var zuixin = $("<div class='zuixin-list'></div>");
+                    for (var i in result) {
+                        var repo = result[i];
+                        var html = baiduTpl.list(repo);
+                        if(repo.state == 1){ // 推荐
+                            tuijian.append(html);
+                        }else if(repo.state == 2){ // 最新
+                            zuixin.append(html);
+                        }else{
+                            tool.append(html);
+                        }
+                    }
+                    toolsContainer.append(tuijian);
+                    toolsContainer.append(zuixin);
+                    toolsContainer.append(tool);
+                    $(".geopattern").each(function() {
+                        $(this).geopattern($(this).data('pattern-id'));
+                    });
+                } else {
+                    errorContainer.append(baiduTpl.error());
+                }
+            });
+        };
 
-    
-</article>
-
-
-    
-    <section id="comments">
-    
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-    
-    </section>
-
-</section>
+        return {
+            init: function() {
+                handleTpl();
+                handleGithub();
+            }
+        }
+    };
+    $(open().init);
+</script></section>
             
                 <aside id="sidebar" class="col-lg-3">
                     
@@ -437,7 +446,7 @@
 </div>
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">Categorias</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
@@ -445,7 +454,7 @@
 
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">Nube de etiquetas</h3>
         <div class="widget tagcloud">
             <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
         </div>
