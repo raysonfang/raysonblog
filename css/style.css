@@ -1087,18 +1087,6 @@ a.article-title:hover {
   #article-nav {
     margin: 15px 0;
   }
-  #article-nav:before {
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -4px;
-    margin-left: -4px;
-    content: "";
-    border-radius: 50%;
-    background: #787c81;
-  }
 }
 .article-nav-link-wrap {
   text-decoration: none;
@@ -1113,9 +1101,11 @@ a.article-title:hover {
 .article-nav-link-wrap:hover {
   color: #565a5f;
 }
+.article-nav-link-wrap:visited {
+  color: #fff;
+}
 @media screen and (min-width: 1200px) {
   .article-nav-link-wrap {
-    width: 50%;
     margin-top: 0;
   }
 }
@@ -1144,9 +1134,6 @@ a.article-title:hover {
   margin-right: -2px;
 }
 .article-nav-title {
-  font-size: 0.85em;
-  margin-top: 0.5em;
-  color: #565a5f;
   line-height: 1.6em;
 }
 .article-share-box {
@@ -1352,6 +1339,20 @@ ol.toc {
 }
 .lg-outer .lg-thumb-item {
   border-radius: 0 !important;
+}
+.btn-default {
+  border: 1px solid #29afec;
+  background: #29afec;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.btn-default:hover {
+  background: #565a5f;
+  border-color: #565a5f;
 }
 #comments {
   padding: 20px;
