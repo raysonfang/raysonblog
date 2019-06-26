@@ -5,18 +5,18 @@
     
     <title>Project | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
 <meta name="keywords" content="方子龙,SpringBoot,SpringCloud,Java技术干货,程序猿,Golang">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Project">
-<meta property="og:url" content="http://www.raysonblog.cn/project/index.html">
+<meta property="og:url" content="http://localhost:4000/project/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-05-19T10:56:09.838Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Project">
-<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
     
 
     
@@ -70,17 +70,19 @@
                 
                     <a class="main-nav-link" href="/nav">极客导航</a>
                 
-                    <a class="main-nav-link" href="/place">子龙有话说</a>
+                    <a class="main-nav-link" href="/place">写作&amp;翻译</a>
+                
+                    <a class="main-nav-link" href="/monthplan">月度计划</a>
                 
                     <a class="main-nav-link" href="/about">关于我</a>
                 
-                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>
+<!--                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>-->
             </nav>
             
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -99,9 +101,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -132,14 +134,16 @@
                 
                     <td><a class="main-nav-link" href="/nav">极客导航</a></td>
                 
-                    <td><a class="main-nav-link" href="/place">子龙有话说</a></td>
+                    <td><a class="main-nav-link" href="/place">写作&amp;翻译</a></td>
+                
+                    <td><a class="main-nav-link" href="/monthplan">月度计划</a></td>
                 
                     <td><a class="main-nav-link" href="/about">关于我</a></td>
                 
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
     </div>
 
                 </td>
@@ -200,7 +204,7 @@
         
         
         </div>
-
+        
         <footer class="article-footer">
             <div class="col-sm-10">
                 <div>
@@ -222,7 +226,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/project/index.html" data-id="cjwzp55xu000glwstl955srz3" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://localhost:4000/project/index.html" data-id="cjwzostp6000gfcst0wluajb7" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -290,12 +294,10 @@
 
                 
     
-        <a href="http://www.raysonblog.cn/project/index.html#comments" class="article-comment-link disqus-comment-count" data-disqus-url="http://www.raysonblog.cn/project/index.html">Comments</a>
-    
 
             </div>
-
         </footer>
+        
     </div>
     
         
@@ -307,10 +309,27 @@
     
     <section id="comments">
     
-        
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+            <div id="vcomments"></div>
+
+<script type="text/javascript">
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//unpkg.com/valine/dist/Valine.min.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+        setTimeout(function(){
+            new Valine({
+                el: '#vcomments',
+                appId: 'tdRWbB5GptIOncRvqrVJ9Tds-gzGzoHsz',
+                appKey: 'cxa5TGRF9s4bI11eBISfNc59'
+            })
+        }, 1000);
+
+    })();
+
+</script>
 
     
     </section>
@@ -439,17 +458,17 @@
 </div>
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">Catégories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">11</span></li></ul></li></ul>
         </div>
     </div>
 
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">Nuage de tags</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
         </div>
     </div>
 
@@ -473,23 +492,6 @@
     </div>
 </footer>
         
-    
-    <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'http://www.raysonblog.cn/project/index.html';
-        
-        this.page.identifier = '';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-
 
     
         <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>

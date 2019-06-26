@@ -5,18 +5,18 @@
     
     <title>极客导航 | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
 <meta name="keywords" content="方子龙,SpringBoot,SpringCloud,Java技术干货,程序猿,Golang">
 <meta property="og:type" content="website">
 <meta property="og:title" content="极客导航">
-<meta property="og:url" content="http://www.raysonblog.cn/nav/index.html">
+<meta property="og:url" content="http://localhost:4000/nav/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-06-10T15:33:10.200Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="极客导航">
-<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang, SpringBoot/SpringCloud等技术交流分享。">
+<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
     
 
     
@@ -70,17 +70,19 @@
                 
                     <a class="main-nav-link" href="/nav">极客导航</a>
                 
-                    <a class="main-nav-link" href="/place">子龙有话说</a>
+                    <a class="main-nav-link" href="/place">写作&amp;翻译</a>
+                
+                    <a class="main-nav-link" href="/monthplan">月度计划</a>
                 
                     <a class="main-nav-link" href="/about">关于我</a>
                 
-                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>
+<!--                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>-->
             </nav>
             
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -99,9 +101,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -132,14 +134,16 @@
                 
                     <td><a class="main-nav-link" href="/nav">极客导航</a></td>
                 
-                    <td><a class="main-nav-link" href="/place">子龙有话说</a></td>
+                    <td><a class="main-nav-link" href="/place">写作&amp;翻译</a></td>
+                
+                    <td><a class="main-nav-link" href="/monthplan">月度计划</a></td>
                 
                     <td><a class="main-nav-link" href="/about">关于我</a></td>
                 
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
     </div>
 
                 </td>
@@ -150,159 +154,9 @@
 
         <div class="outer row">
             
-            <section id="main" class="col-lg-9"><style>
-    .row {
-        margin-top: 15px;
-    }
-
-    .index-card {
-        padding: 15px;
-        background: #fff;
-        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    }
-
-    .index-card-head {
-        font-size: 1.3em;
-        font-weight: 700;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #eceff2;
-        /*color: #009688;*/
-        color: #00b8a9;
-    }
-
-    .index-card-body {
-
-    }
-
-    .index-card-body-list {
-        display: block;
-        margin-bottom: 7px;
-        justify-content: space-between;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .index-card-body-list a {
-        color: grey;
-        font-size: 15px;
-        width: 80%;
-    }
-
-    .index-card-body-list a:hover {
-        color: dodgerblue;
-    }
-
-    /*.index-card-footer {*/
-    /*font-size: 0.85em;*/
-    /*line-height: 1.6em;*/
-    /*border-top: 1px solid #eceff2;*/
-    /*padding-top: 5px;*/
-    /*margin-top: 20px;*/
-    /*}*/
-</style>
-<div class="row">
-    <div class="col-md-12">
-        <div class="index-card">
-            <div class="index-card-head">
-                <h3>极客导航</h3>
-            </div>
-            <div class="index-card-body">
-                信息共享，极客导航。<br>
-                当然这不是打广告，我把看到的，有用的，感兴趣的进行收集整理。<br>
-                平日里都自己用标签添加收藏，但时间久了， 也就忘记了。<br>
-                我们的记忆总会被时间渐渐抹去，也只有靠实打实地记录保存下来，放到自己经常看得见的地方。
-            </div>
-            <div class="index-card-footer" style="text-align: right;margin-top: 10px;">
-                <a href="/about">您有好的工具推荐,联系我</a>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="tools-list">
-
-</div>
-
-<!--工具选项模版-->
-<script type="text/template" id="list-template">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="index-card">
-                <div class="index-card-head">
-                    <h3>编号{%=uid%}：{%=name%}</h3>
-                </div>
-                <div class="index-card-body">
-                    {%=description%}
-                </div>
-                <div class="index-card-footer" style="text-align: right;">
-                    {% for(var j = 0; j < links.length; j++){ %}
-                    <a href="{%=links[j].link%}">{%=links[j].action%}</a>
-                    {% } %}
-                </div>
-            </div>
-        </div>
-    </div>
-</script>
-<!--获取失败模版-->
-<script type="text/template" id="error-template">
-    <h3>加载失败</h3><p>请刷新或稍后再试...</p>
-</script>
-
-<script type="text/javascript">
-    var open = function() {
-        var baiduTpl = new Object();
-        var handleTpl = function() {
-            baiduTpl.list = baidu.template("list-template");
-            baiduTpl.error = baidu.template("error-template");
-        };
-
-        var handleGithub = function() {
-            var toolsContainer = $('#tools-list');
-            var errorContainer = toolsContainer.find(".blankslate");
-            var countContainer = $("#repo-count");
-
-            $.get("/json/tools.json", function(result) {
-                if (result) {
-                    result = result.list;
-                    errorContainer.remove();
-                    countContainer.text(result.length); //设置项目个数
-                    var tool = $("<div class='tool-list'></div>");
-                    var tuijian = $("<div class='tuijian-list'></div>");
-                    var zuixin = $("<div class='zuixin-list'></div>");
-                    for (var i in result) {
-                        var repo = result[i];
-                        var html = baiduTpl.list(repo);
-                        if(repo.state == 1){ // 推荐
-                            tuijian.append(html);
-                        }else if(repo.state == 2){ // 最新
-                            zuixin.append(html);
-                        }else{
-                            tool.append(html);
-                        }
-                    }
-                    toolsContainer.append(tuijian);
-                    toolsContainer.append(zuixin);
-                    toolsContainer.append(tool);
-                    $(".geopattern").each(function() {
-                        $(this).geopattern($(this).data('pattern-id'));
-                    });
-                } else {
-                    errorContainer.append(baiduTpl.error());
-                }
-            });
-        };
-
-        return {
-            init: function() {
-                handleTpl();
-                handleGithub();
-            }
-        }
-    };
-    $(open().init);
-</script></section>
+            <section id="main" class="col-lg-9"><section class="layout-wrap">
+    111
+</section></section>
             
                 <aside id="sidebar" class="col-lg-3">
                     
@@ -426,17 +280,17 @@
 </div>
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">Catégories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">11</span></li></ul></li></ul>
         </div>
     </div>
 
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">Nuage de tags</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
         </div>
     </div>
 
@@ -460,23 +314,6 @@
     </div>
 </footer>
         
-    
-    <script>
-    var disqus_config = function () {
-        
-            this.page.url = 'http://www.raysonblog.cn/nav/index.html';
-        
-        this.page.identifier = '';
-    };
-    (function() { 
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'hexo-theme-icarus' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-
-
 
     
         <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
