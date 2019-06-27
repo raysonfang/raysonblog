@@ -82,7 +82,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -101,10 +101,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -143,7 +143,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
     </div>
 
                 </td>
@@ -199,7 +199,7 @@
 
 </div>
 
-    <a data-url="http://localhost:4000/sources/index.html" data-id="cjxeayodp001xtwstq624gldo" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://localhost:4000/sources/index.html" data-id="cjxebl1bq0012nwsttmci20ke" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -283,21 +283,15 @@
     <section id="comments">
     
             <div id="vcomments"></div>
-<script type="javascript" src="https://cdn.jsdelivr.net/npm/valine@1.3.6/dist/Valine.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js"></script>
 <script type="text/javascript">
-    (function() {
-       /* var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//unpkg.com/valine/dist/Valine.min.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0]
-        || document.getElementsByTagName('body')[0]).appendChild(ds);*/
-            new Valine({
-                el: '#vcomments',
-                appId: 'tdRWbB5GptIOncRvqrVJ9Tds-gzGzoHsz',
-                appKey: 'cxa5TGRF9s4bI11eBISfNc59'
-            })
-    })();
+  $(function () {
+      new Valine({
+          el: '#vcomments',
+          appId: 'tdRWbB5GptIOncRvqrVJ9Tds-gzGzoHsz',
+          appKey: 'cxa5TGRF9s4bI11eBISfNc59'
+      });
+  })
 
 </script>
 
@@ -428,7 +422,7 @@
 </div>
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">categories</h3>
+        <h3 class="widget-title">Categorias</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">11</span></li></ul></li></ul>
         </div>
@@ -436,7 +430,7 @@
 
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">tag cloud</h3>
+        <h3 class="widget-title">Nube de etiquetas</h3>
         <div class="widget tagcloud">
             <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
         </div>
