@@ -63,14 +63,6 @@
                 
                     <a class="main-nav-link" href="/categories">分类</a>
                 
-                    <a class="main-nav-link" href="/books">书单</a>
-                
-                    <a class="main-nav-link" href="/tools">工具</a>
-                
-                    <a class="main-nav-link" href="/nav">极客导航</a>
-                
-                    <a class="main-nav-link" href="/place">写作&amp;翻译</a>
-                
                     <a class="main-nav-link" href="/monthplan">月度计划</a>
                 
                     <a class="main-nav-link" href="/about">关于我</a>
@@ -81,7 +73,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -100,10 +92,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -127,14 +119,6 @@
                 
                     <td><a class="main-nav-link" href="/categories">分类</a></td>
                 
-                    <td><a class="main-nav-link" href="/books">书单</a></td>
-                
-                    <td><a class="main-nav-link" href="/tools">工具</a></td>
-                
-                    <td><a class="main-nav-link" href="/nav">极客导航</a></td>
-                
-                    <td><a class="main-nav-link" href="/place">写作&amp;翻译</a></td>
-                
                     <td><a class="main-nav-link" href="/monthplan">月度计划</a></td>
                 
                     <td><a class="main-nav-link" href="/about">关于我</a></td>
@@ -142,7 +126,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search">
     </div>
 
                 </td>
@@ -406,6 +390,103 @@
 <!--        })-->
 <!--    </script>-->
 <!--</div>-->
+<!--<style type="text/css">
+    /*border-bottom: 1px solid #F0F0F0;*/
+    .huadong {width: 60rem;height:4rem;padding: 0.5rem 0 0.3rem 0; border-bottom: 1px solid #F0F0F0; position:relative;font: 12px/1.5 "Hiragino Sans GB","Microsoft YaHei",simsun;margin:0 auto;}
+    .huadong .huabox {  margin:0 auto; width: 80%; line-height: 4rem;}
+    .huadong .hdimg {float:left;line-height:3.5rem;}
+    .huadong .hdimg img { width: 100%; vertical-align:middle;}
+    .huadong h5 {font-size:1rem;float:left; line-height: 2.2rem; margin: 0.8rem 0 0 0; }
+    .huadong .gg_more { float: left;}
+    .huadong .gg_more a { font-size: 0.8rem; text-decoration:none;}
+
+    .huadong .notice_active {
+        float: left;
+        width: 55%;
+        height: 4rem;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .huadong .notice_active li{list-style-type:none;line-height: 2.4rem;overflow: hidden;}
+    /*.huadong .notice_active li.notice_active_ch {}*/
+    .huadong .notice_active li.notice_active_ch span {color:#656972;font-size:1rem;display: block;overflow: hidden; width:80%;float: left;
+        overflow: hidden;margin:0 0 2rem 0;}
+    .huadong .gg_more .news_ck {
+        float: left;
+        margin: 0 1rem 0 1rem;
+        color: #888;
+        width: 5rem;
+        height: 2rem;
+        line-height: 2rem;
+        display: block;
+        border: 1px solid #656972;
+        text-align: center;
+        border-radius: 0.7rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .huadong .gg_more .news_more {
+
+    }
+    .huadong .notice_active li.notice_active_ch em {text-align:right;float:right;color:#888;font-size:0.8rem;font-style:normal;  }
+</style>
+<script type="text/javascript">
+    function timer(opj){
+        $(opj).find('ul').animate({
+            marginTop : "-3.5rem"
+        },500,function(){
+            $(this).css({marginTop : "0.7rem"}).find("li:first").appendTo(this);
+        })
+    }
+    $(function(){
+        var num = $('.notice_active').find('li').length;
+        if(num > 1){
+            var time=setInterval('timer(".notice_active")',3500);
+            $('.gg_more a').mousemove(function(){
+                clearInterval(time);
+            }).mouseout(function(){
+                time = setInterval('timer(".notice_active")',3500);
+            });
+        }
+
+        $(".news_ck").click(function(){
+            location.href = $(".notice_active .notice_active_ch").children(":input").val();
+        })
+    });
+</script>
+<div class="huadong">
+    <div class="huabox">
+        <div class="hdimg"><img src="/assets/scroll/lingdang.png"></div>
+        <h5>【公告】</h5>
+        <div class="notice_active">
+            <ul>
+                <li class="notice_active_ch">
+                    <span>滑动轮播1a去哦我我iwoi我i滑动轮播3滑</span>
+
+                    <em>2017-01-20</em>
+                </li>
+                <li class="notice_active_ch">
+                    <span>滑动轮播2滑动轮播3</span>
+
+                    <em>2017-01-20</em>
+                </li>
+                <li class="notice_active_ch">
+                    <span>站长素材文字滚动播放</span>
+
+                    <em>2017-01-20</em>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="gg_more">
+            <a class="news_ck" href="javascript:void(0)">查看详情</a>
+            <a title="news_more" href="#">更多+</a>
+        </div>
+    </div>
+</div>-->
 <!-- 第二行展示推荐阅读和最新发布内容卡片 -->
 <div class="row">
     <div class="col-md-6">
@@ -557,11 +638,6 @@
     </div>
 
                         
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
                     </div>
                 
             </header>
@@ -626,11 +702,6 @@
         <a class="tag-link" href="/tags/hexo/">hexo</a>
     </div>
 
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
                         
                     </div>
                 
@@ -697,11 +768,6 @@
     </div>
 
                         
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
                     </div>
                 
             </header>
@@ -766,11 +832,6 @@
         <a class="tag-link" href="/tags/hexo/">hexo</a>
     </div>
 
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
                         
                     </div>
                 
@@ -837,11 +898,6 @@
     </div>
 
                         
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
                     </div>
                 
             </header>
@@ -906,11 +962,6 @@
         <a class="tag-link" href="/tags/hexo/">hexo</a>
     </div>
 
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
                         
                     </div>
                 
@@ -977,11 +1028,6 @@
     </div>
 
                         
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
                     </div>
                 
             </header>
@@ -1046,11 +1092,6 @@
         <a class="tag-link" href="/tags/hexo/">hexo</a>
     </div>
 
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
                         
                     </div>
                 
@@ -1117,11 +1158,6 @@
     </div>
 
                         
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
-                        
                     </div>
                 
             </header>
@@ -1186,11 +1222,6 @@
         <a class="tag-link" href="/tags/hexo/">hexo</a>
     </div>
 
-                        
-                            <span class="fa-wrap">
-                <i class="fa fa-eye"></i>
-                <span id="busuanzi_value_page_pv"></span>
-            </span>
                         
                     </div>
                 
@@ -1306,42 +1337,42 @@
     <div class="widget">
         <div class="row">
             <div class="col-md-3">
-                <img src>
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
             </div>
             <div class="col-md-9">
-                <a src="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
-                    Spring Cloud系列教程
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Spring Boot
                 </a>
-                <p>啊啊啊啊</p>
+                <p>正在更新中...</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <img src>
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
             </div>
             <div class="col-md-9">
-                <a src="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
-                    Spring Cloud系列教程
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Java高并发
                 </a>
-                <p>啊啊啊啊</p>
+                <p>趣学Java高并发</p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <img src>
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
             </div>
             <div class="col-md-9">
-                <a src="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
-                    Spring Cloud系列教程
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Golang
                 </a>
-                <p>啊啊啊啊</p>
+                <p>兴趣所致, 寸草不生</p>
             </div>
         </div>
     </div>
 </div>
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">Categorias</h3>
+        <h3 class="widget-title">categories</h3>
         <div class="widget">
             <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/教程/">教程</a><span class="category-list-count">11</span></li></ul></li></ul>
         </div>
@@ -1349,7 +1380,7 @@
 
 
     <div class="widget-wrap widget-panel">
-        <h3 class="widget-title">Nube de etiquetas</h3>
+        <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
             <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a>
         </div>
@@ -1377,6 +1408,7 @@
         <dl class="col-sm-4">
             <dd><img style="width: 40%" src="/assets/barcode/java_barcode.jpg"></dd>
             <dd style="font-size: 14px;"><strong>*微信公众号*</strong></dd>
+            <dd style="font-size: 14px;"><strong>*为你推送最实用的Java技术干货*</strong></dd>
         </dl>
         <dl class="col-sm-4">
             <dt style="text-align: left">友链 |</dt>
