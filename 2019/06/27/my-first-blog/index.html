@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>我的个人博客搭建之旅 | 方子龙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="为期一个月的个人博客搭建，到现在也基本上有一个像样的雏形，总体上来说还是比较满意。所以准备写一下搭建博客过程的感受。 引言从2017年到现在，总共有两次用Hexo来搭建个人博客。访问方子龙的博客:http://www.raysonblog.cn/  第一次：  在2017年的时候，开始想着用Java干它一个属于自己的博客，当然不是马上就开始干，得网上查找资料啊！看看是否有现成的能够直接使用。在此过">
+<meta name="keywords" content="杂谈">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的个人博客搭建之旅">
+<meta property="og:url" content="http://www.raysonblog.cn/2019/06/27/my-first-blog/index.html">
+<meta property="og:site_name" content="方子龙">
+<meta property="og:description" content="为期一个月的个人博客搭建，到现在也基本上有一个像样的雏形，总体上来说还是比较满意。所以准备写一下搭建博客过程的感受。 引言从2017年到现在，总共有两次用Hexo来搭建个人博客。访问方子龙的博客:http://www.raysonblog.cn/  第一次：  在2017年的时候，开始想着用Java干它一个属于自己的博客，当然不是马上就开始干，得网上查找资料啊！看看是否有现成的能够直接使用。在此过">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-28T05:40:35.300Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的个人博客搭建之旅">
+<meta name="twitter:description" content="为期一个月的个人博客搭建，到现在也基本上有一个像样的雏形，总体上来说还是比较满意。所以准备写一下搭建博客过程的感受。 引言从2017年到现在，总共有两次用Hexo来搭建个人博客。访问方子龙的博客:http://www.raysonblog.cn/  第一次：  在2017年的时候，开始想着用Java干它一个属于自己的博客，当然不是马上就开始干，得网上查找资料啊！看看是否有现成的能够直接使用。在此过">
+    
+
+    
+        <link rel="alternate" href="/" title="方子龙" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="/vendor/baiduTemplate/plugin.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+    
+    
+
+
+    </head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">方子龙</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/monthplan">月度计划</a>
+                
+                    <a class="main-nav-link" href="/about">关于我</a>
+                
+<!--                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>-->
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Articles',
+            PAGES: 'Pages',
+            CATEGORIES: 'Catégories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/monthplan">月度计划</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于我</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer row">
+            
+            <section id="main" class="col-lg-9"><article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            我的个人博客搭建之旅
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div>
+        <span class="label label-success" style="font-size: 14px">原创</span>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/27/my-first-blog/">
+            <time datetime="2019-06-27T08:50:32.000Z" itemprop="datePublished">2019-06-27</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-author">
+        <i class="fa fa-user"></i>
+        <a href="/2019/06/27/my-first-blog/">
+            方子龙
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/杂谈/">杂谈</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/杂谈/个人感想/">个人感想</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/杂谈/">杂谈</a>
+    </div>
+
+                        
+                            <span class="fa-wrap">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_page_pv"></span>
+            </span>
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p><code>为期一个月的个人博客搭建，到现在也基本上有一个像样的雏形，总体上来说还是比较满意。所以准备写一下搭建博客过程的感受。</code></p>
+<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>从2017年到现在，总共有两次用Hexo来搭建个人博客。<br>访问<a href="http://www.raysonblog.cn/">方子龙的博客</a>:<a href="http://www.raysonblog.cn/">http://www.raysonblog.cn/</a></p>
+<ul>
+<li><p>第一次：<br>  在2017年的时候，开始想着用Java干它一个属于自己的博客，当然不是马上就开始干，得网上查找资料啊！看看是否有现成的能够直接使用。在此过程中，发现有很多的博客主题都基本上一致，而且还比较好看, 效果杠杠地。为了满足好奇心，就看到网站下方有关于<code>Hexo</code>的字样，就点进去看到了一下简介，而且还有很多好看的主题，还可以随意配置自己喜欢的主题。顿时我就打消了要自己写博客程序的念头。有这么好用的，当然是直接拿来即用。就这样，一边搭建一边学习也就有了Hexo+Next主题的第一版博客。</p>
+<p>  遗憾的是，搭建成功以后，也没有去管理，任它荒废。</p>
+<a id="more"></a></li>
+<li>第二次：<br>  搭建过程耗时一个月左右的时间，抽空闲时间来做，相比第一次，这次的搭建过程耗时比较长，主要原因是修改主题样式，对主题代码不熟悉。但是总体收获还是很多。效果样式都还比较喜欢，蛮符合我心里的预期。</li>
+</ul>
+<p>接下来，就谈谈如何搭建，以及一些思考。 具体详细如何搭建也可以百度。</p>
+<h1 id="一-环境配置"><a href="#一-环境配置" class="headerlink" title="一. 环境配置"></a>一. 环境配置</h1><p>【Nodejs】官网下载：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></p>
+<p>【Git】官网下载：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<p>网上有很多相关的安装使用教程，我这里就不多余的说。自己动手才是硬道理。</p>
+<h1 id="二-Hexo的安装与常用基本命令"><a href="#二-Hexo的安装与常用基本命令" class="headerlink" title="二. Hexo的安装与常用基本命令"></a>二. Hexo的安装与常用基本命令</h1><p>基础环境配置好以后，那么接下来就可以安装生成静态博客网站的关键–Hexo，其主要信息和安装命令，主题等都可以通过官网轻松的了解：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
+<p>为了安装Hexo，只需要在blog-hexo目录中单击右键启动Git Bash Here，然后输入命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
+<p>网上有很多其他的命令，建议一切以官网命令为依据，由于时间版本原因，很有可能未来的命令发生改变而失效。</p>
+<p>然后等待几分钟（取决于你的网速），完成后。</p>
+<p>在blog-Hexo目录下执行如下命令进行初始化：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p>然后就可以使用Hexo三连击，即我们最常用的三个主要命令（依旧在上述Git Bash命令端口中）：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean # 清空已有hexo网站文件</span><br><span class="line">hexo generate(or g) # 依据网页文本与新的CSS样式生成新网站文件</span><br><span class="line">hexo server(or s) # 启动本地服务器</span><br></pre></td></tr></table></figure></p>
+<p>可以在localhost:4000查看网站修改效果 依次运行上述三个命令，就可以在浏览器打开localhost:4000端口，查看对应网站界面效果。</p>
+<p>一般默认的是一个landscape主题，后期当提交新文章或者新的样式修改时，往往都是先从本地查看结果无误后再部署到Github Pages。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hexo deploy(or d) #提交代码到Github上</span><br></pre></td></tr></table></figure></p>
+<h1 id="三-Hexo主题下载与使用"><a href="#三-Hexo主题下载与使用" class="headerlink" title="三. Hexo主题下载与使用"></a>三. Hexo主题下载与使用</h1><p>主题官网浏览地址：<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></p>
+<p>在选择主题的过程中耗费了很多的时间和遇到了很多问题，其原因就是主题功能不全以及选择自己喜欢的风格导致的。最后推荐搭建使用hexo-theme-next主题，因为这个功能最全。</p>
+<p>在这个过程中,主题的许多是要修改的。</p>
+<ul>
+<li>菜单</li>
+<li>版权</li>
+<li>gitHub banner</li>
+<li>社交信息</li>
+<li>头像信息</li>
+<li>阅读时间统计</li>
+<li>打赏设置</li>
+<li>评论设置</li>
+<li>百度统计</li>
+<li>leancloud访问统计</li>
+<li>不蒜子阅读访问统计</li>
+<li>本地搜索</li>
+<li>SEO优化(必须要做，然后百度就搜不到你的博客)</li>
+</ul>
+<h1 id="四-两个重要的配置文件：Hexo的配置文件与主题的配置文件"><a href="#四-两个重要的配置文件：Hexo的配置文件与主题的配置文件" class="headerlink" title="四. 两个重要的配置文件：Hexo的配置文件与主题的配置文件"></a>四. 两个重要的配置文件：Hexo的配置文件与主题的配置文件</h1><h2 id="4-1-Hexo配置文件"><a href="#4-1-Hexo配置文件" class="headerlink" title="4.1 Hexo配置文件"></a>4.1 Hexo配置文件</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site 站点</span><br><span class="line">title: 方子龙</span><br><span class="line">subtitle:</span><br><span class="line">description: 「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。</span><br><span class="line">keywords: 方子龙,SpringBoot,SpringCloud,Java技术干货,程序猿,Golang</span><br><span class="line">author: 方子龙</span><br><span class="line">language:</span><br><span class="line">timezone:</span><br><span class="line"></span><br><span class="line"># URL</span><br><span class="line">## If your site is put in a subdirectory, set url as &apos;http://yoursite.com/child&apos; and root as &apos;/child/&apos;</span><br><span class="line">url: http://www.raysonblog.cn</span><br><span class="line">root: /</span><br><span class="line">permalink: :year/:month/:day/:title/</span><br><span class="line">permalink_defaults:</span><br><span class="line"></span><br><span class="line"># Directory</span><br><span class="line">source_dir: source</span><br><span class="line">public_dir: public</span><br><span class="line">tag_dir: tags</span><br><span class="line">archive_dir: archives</span><br><span class="line">category_dir: categories</span><br><span class="line">book_dir: books</span><br><span class="line">code_dir: downloads/code</span><br><span class="line">i18n_dir: :lang</span><br><span class="line">skip_render:</span><br><span class="line"></span><br><span class="line"># Writing</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link: true # Open external links in new tab</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace:</span><br><span class="line"></span><br><span class="line"># Home page setting</span><br><span class="line"># path: Root path for your blogs index page. (default = &apos;&apos;)</span><br><span class="line"># per_page: Posts displayed per page. (0 = disable pagination)</span><br><span class="line"># order_by: Posts order. (Order by date descending by default)</span><br><span class="line">index_generator:</span><br><span class="line">  path: &apos;&apos;</span><br><span class="line">  per_page: 10</span><br><span class="line">  order_by: -date</span><br><span class="line">  </span><br><span class="line"># Category &amp; Tag</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">tag_map:</span><br><span class="line"></span><br><span class="line"># Date / Time format</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format as defined in</span><br><span class="line">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="line">date_format: YYYY-MM-DD</span><br><span class="line">time_format: HH:mm:ss</span><br><span class="line"></span><br><span class="line"># Pagination</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 10</span><br><span class="line">pagination_dir: page</span><br><span class="line"></span><br><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br><span class="line"></span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:raysonfang/raysonblog.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p><strong>主要修改3个地方：</strong></p>
+<ul>
+<li>Site 站点信息配置</li>
+<li>URL 域名信息配置</li>
+<li>theme 主题配置</li>
+<li>Deploy 代码托管提交配置</li>
+</ul>
+<h2 id="4-2-主题的配置文件"><a href="#4-2-主题的配置文件" class="headerlink" title="4.2 主题的配置文件"></a>4.2 主题的配置文件</h2><p>主题中的配置文件跟每个主题有关，可以自己尝试修改，然后运行看效果。</p>
+<h1 id="五-准备一个属于自己的专属域名"><a href="#五-准备一个属于自己的专属域名" class="headerlink" title="五. 准备一个属于自己的专属域名"></a>五. 准备一个属于自己的专属域名</h1><p>上面的博客只能在本地访问，需要放到外网上去，还得将编译好的静态文件提交到代码托管平台，比如github, Gitee等，这些平台都支持Pages服务。至于如何部署， 网上也可以找到资料。购买了自己的域名，那配置也相对简单。</p>
+<h1 id="六-问题总结"><a href="#六-问题总结" class="headerlink" title="六. 问题总结"></a>六. 问题总结</h1><h4 id="1-GitHub-Pages自定义域名后每次hexo-d都会失效解决"><a href="#1-GitHub-Pages自定义域名后每次hexo-d都会失效解决" class="headerlink" title="1. GitHub Pages自定义域名后每次hexo d都会失效解决"></a>1. GitHub Pages自定义域名后每次hexo d都会失效解决</h4><p>只要在source 目录添加一个新文件CNAME就好</p>
+<p>  CNAME –不带任何后缀，这就是全称，里面写的是你的域名</p>
+<p>  然后就ok了。</p>
+<p>怎么push都不用再去GitHub Pages设置了</p>
+<h4 id="2-如何让文章能被指定的layout样式渲染"><a href="#2-如何让文章能被指定的layout样式渲染" class="headerlink" title="2. 如何让文章能被指定的layout样式渲染"></a>2. 如何让文章能被指定的layout样式渲染</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line">layout: about #指定模板</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h4 id="3-文件分类如何指定二级分类"><a href="#3-文件分类如何指定二级分类" class="headerlink" title="3. 文件分类如何指定二级分类"></a>3. 文件分类如何指定二级分类</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的个人博客搭建之旅</span><br><span class="line">date: 2019-6-27 16:50:32</span><br><span class="line">author: 方子龙</span><br><span class="line">original: true   # 自定义文章属性 原创标识</span><br><span class="line">tuijian: true    # 自定义文章属性  推荐标识</span><br><span class="line">categories: #分类</span><br><span class="line">- 杂谈     #一级分类</span><br><span class="line">- 个人感想 # 二级分类</span><br><span class="line">tags:</span><br><span class="line">- 杂谈</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h4 id="4-文章如何自定义属性以及模板如何取值"><a href="#4-文章如何自定义属性以及模板如何取值" class="headerlink" title="4. 文章如何自定义属性以及模板如何取值"></a>4. 文章如何自定义属性以及模板如何取值</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的个人博客搭建之旅</span><br><span class="line">date: 2019-6-27 16:50:32</span><br><span class="line">author: 方子龙 # 自定义文章属性 作者</span><br><span class="line">original: true   # 自定义文章属性 原创标识</span><br><span class="line">tuijian: true    # 自定义文章属性  推荐标识</span><br><span class="line">categories: #分类</span><br><span class="line">- 杂谈     #一级分类</span><br><span class="line">- 个人感想 # 二级分类</span><br><span class="line">tags:</span><br><span class="line">- 杂谈</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>在模板中取值：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">post.author</span><br><span class="line">post.original</span><br><span class="line">post.tuijian</span><br></pre></td></tr></table></figure></p>
+<h4 id="5-如何获取整个站点的文章"><a href="#5-如何获取整个站点的文章" class="headerlink" title="5. 如何获取整个站点的文章"></a>5. 如何获取整个站点的文章</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site.posts</span><br></pre></td></tr></table></figure>
+<h1 id="七-总结"><a href="#七-总结" class="headerlink" title="七. 总结"></a>七. 总结</h1><p>在搭建博客之前，我就想过自己的博客要有“书单”，“工具”，“写作&amp;翻译”等菜单，就都放置到了博客的菜单栏上，随后又得考虑每一个菜单页的内容布局要怎么做。后来发现每一个菜单的内容没有好的布局，总是零散的。所以我忍痛割爱，在没有好的想法之前，就先隐藏掉。在修改主题的代码过程中，还是很有一点难度。不过慢慢地也就得心应手了，知道怎么修改主题里的代码。我总是爱折腾的，时间花的比较多，但是收获总是很多。</p>
+
+        
+        
+        </div>
+        
+        <footer class="article-footer">
+            <div class="col-sm-10">
+                <div>
+                    <b>本文链接</b>：<a href="/2019/06/27/my-first-blog/">我的个人博客搭建之旅</a>
+                </div>
+                <div>
+                    
+                        转载声明：本博客由方子龙创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"> CC BY 3.0 CN </a> 许可协议。可自由转载、引用，但需署名作者且注明文章出处。如转载至微信公众号，请在文末添加作者公众号二维码。
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.raysonblog.cn/2019/06/27/my-first-blog/" data-id="cjxfozpvg0007n0stut2b7j11" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                
+    
+
+            </div>
+        </footer>
+        
+    </div>
+    
+        
+
+    
+</article>
+
+
+    
+    <section id="comments">
+    
+            <div id="gitmentContainer"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'Thu Jun 27 2019 16:50:32 GMT+0800',
+        owner: 'raysonfang',
+        repo: 'blog-comments',
+        oauth: {
+            client_id: '60c4e5ce6224a633aac9',
+            client_secret: '0107cb5774f4942a00972cefbcddb7c5b665c91e',
+        },
+    });
+    gitment.render('gitmentContainer')
+</script>
+
+
+        
+    </section>
+
+</section>
+            
+                <aside id="sidebar" class="col-lg-3">
+                    
+    
+
+<style>
+    .bg-danger {
+        /*background-color: #009688;*/
+        /*background-color: #00adb5;*/
+        background-color: #00b8a9;
+        padding: 15px;
+        margin: 0px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-block {
+        padding: 10px 0px 30px 20px;
+        margin-top: 10px;
+        border-top: 1px solid #eceff2;
+    }
+
+    .tooltip {
+        opacity: 1;
+    }
+
+    .widget-panel {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .media-body p {
+        font-size: 13px;
+        color: grey;
+    }
+
+</style>
+<div class="widget-wrap">
+    <div class="widget bg-danger" style="color:whitesmoke;">
+        <div class="card-front animated col s12 m12 l8 offset-l2 fadeInUp">
+            <div class="row" style="margin-top: 0px">
+                <div class="col-md-12">
+                    <img class="adv" style="width: 100%;" src="/assets/barcode/java_wx.jpg">
+                </div>
+                <div class="col-md-12" style="text-align: center;padding-left: 5px;">
+                    <h2 style="font-size: 18px;margin-bottom: 12px;">关注公众号</h2>
+                    <small style="font-size: 0.8em;">
+                        →「技术干货」每日推送<br>
+                        →「免费资料」随时领取<br>
+                    </small>
+                </div>
+            </div>
+        </div>
+<!--        <div style="font-size: 0.8em;">-->
+<!--            添加我的微信：<span style="color: orange;font-weight: bold;">zyc_enjoy</span> 参与技术讨论群<br>-->
+<!--            除公众号以外，我还会在以下平台发布内容：-->
+<!--        </div>-->
+<!--        <div class="profile-block social-links">-->
+<!--            <table style="width: 100%;text-align: center;">-->
+<!--                <tr>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://github.com/dyc87112" target="_blank" title="GitHub" class="tooltip">-->
+<!--                            <img style="width: 22px;height: 22px;" src="/assets/icon/github.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="http://gitee.com/didispace" target="_blank" title="Gitee" class="tooltip">-->
+<!--                            <img style="width: 18px;" src="/assets/icon/gitee.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://www.zhihu.com/people/di-yong-chao-86/" target="_blank" title="知乎" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/zhihu.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://blog.csdn.net/dyc87112" target="_blank" title="CSDN" class="tooltip">-->
+<!--                            <img style="width: 18px;" src="/assets/icon/CSDN.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://www.jianshu.com/u/6a622d516e32" target="_blank" title="简书" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/JianShu.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="http://weibo.com/2014605502" target="_blank" title="微博" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/weibo.svg"></a>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </div>-->
+    </div>
+</div>
+<div class="widget-wrap widget-panel">
+    <h3 class="widget-title">专题</h3>
+    <div class="widget">
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Spring Boot
+                </a>
+                <p>正在更新中...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Java高并发
+                </a>
+                <p>趣学Java高并发</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 180%;" src="/assets/barcode/java_barcode.jpg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Golang
+                </a>
+                <p>兴趣所致, 寸草不生</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="widget-wrap widget-panel">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li></ul>
+        </div>
+    </div>
+
+
+    <div class="widget-wrap widget-panel">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
+        </div>
+    </div>
+
+<div id="toTop" class="fa fa-angle-up"></div>
+                </aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="container">
+    <div class="row hidden-xs" style="margin-top: 0px">
+        <dl class="col-sm-4">
+            <dd style="text-align: left">关于博客 |</dd>
+            <dd style="font-size: 14px;margin-top: 5px;">本博客致力于个人技术学习分享，以及转载分享优质技术文章</dd>
+            <dd style="text-align: left">我的平台 |</dd>
+            <dd style="font-size: 14px;margin-top: 5px;">
+                <div class="row hidden-xs">
+                    <div class="col-sm-4"><a href="https://www.jianshu.com/u/5b0de5c8dc56" target="_blank">简书</a></div>
+                    <div class="col-sm-4"><a href="https://www.cnblogs.com/werewolfBoy/" target="_blank">博客园</a></div>
+                    <div class="col-sm-4"><a href="https://blog.csdn.net/qq_33399709" target="_blank">CSDN</a></div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="col-sm-4">
+            <dd><img style="width: 40%" src="/assets/barcode/java_barcode.jpg"></dd>
+            <dd style="font-size: 14px;"><strong>*微信公众号*</strong></dd>
+            <dd style="font-size: 14px;"><strong>*为你推送最实用的Java技术干货*</strong></dd>
+        </dl>
+        <dl class="col-sm-4">
+            <dt style="text-align: left">友链 |</dt>
+            <dd style="font-size: 14px;margin-top: 5px;"><a href="/about">申请友链</a></dd>
+        </dl>
+    </div>
+    </div>
+    <div class="outer" style="margin-top: 20px;">
+        <div id="footer-info" class="inner">
+            &copy; 2019 方子龙 版权所有
+            浏览量:
+            <strong id="busuanzi_value_site_pv">
+                <i class="fa fa-spinner fa-spin"></i>
+            </strong>
+            总访客:
+            <strong id="busuanzi_value_site_uv">
+                <i class="fa fa-spinner fa-spin"></i>
+            </strong> 人<br>
+        </div>
+    </div>
+</footer>
+        
+
+    
+        <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-share.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-video.min.js"></script>
+    
+    
+
+
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
