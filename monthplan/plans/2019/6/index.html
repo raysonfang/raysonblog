@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,9 +111,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
+            CATEGORIES: 'Categories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -145,7 +145,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -259,7 +259,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/monthplan/plans/2019/6/index.html" data-id="cjxleognb000lagsth400r9uh" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
+    <a data-url="http://www.raysonblog.cn/monthplan/plans/2019/6/index.html" data-id="cjxln19q3000lqsst56841bml" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -401,7 +401,9 @@
         font-size: 13px;
         color: grey;
     }
-
+    .widget-zt .row {
+        margin-top: 15px;
+    }
 </style>
 <div class="widget-wrap">
     <div class="widget bg-danger" style="color:whitesmoke;">
@@ -449,7 +451,7 @@
 <!--        </div>-->
     </div>
 </div>
-<div class="widget-wrap widget-panel">
+<div class="widget-wrap widget-panel widget-zt">
     <h3 class="widget-title">专题</h3>
     <div class="widget">
         <div class="row">
@@ -476,6 +478,17 @@
         </div>
         <div class="row">
             <div class="col-md-3">
+                <img style="width: 55px;" src="/assets/other/offer.svg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    💰直击Java面试
+                </a>
+                <p>精心整理，🗡剑指offer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
                 <img style="width: 55px;" src="/assets/golang/golang.svg">
             </div>
             <div class="col-md-9">
@@ -485,6 +498,7 @@
                 <p>兴趣所致, 寸草不生</p>
             </div>
         </div>
+
     </div>
 </div>
 
