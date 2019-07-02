@@ -47,7 +47,23 @@
     
 
 
-    </head>
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+
+</head>
 </html>
 <body>
     <div id="container">
@@ -76,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -95,9 +111,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
+            CATEGORIES: 'Catégories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -129,7 +145,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
     </div>
 
                 </td>
@@ -229,7 +245,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/01/summary-of-common-sql/" data-id="cjxlej9ot0001sgst5wckn94w" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/01/summary-of-common-sql/" data-id="cjxleogkd0001agst2h6lvus3" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
