@@ -5,20 +5,20 @@
     <meta name="baidu-site-verification" content="qd1f9n0kEk">
     <meta name="google-site-verification" content="Gwh2EnLnIMkr6D-Uyzrgm3qN7zFQgCZunuaz9lJJNxg">
     
-    <title>��VBA����Excel, �ϲ�����Excel�ļ� | 方子龙</title>
+    <title>用VBA处理Excel, 合并两个Excel文件 | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="һ. ���󱳾���˾��Ҫ�ϲ�����Excel�ļ����������ļ����ص���ǣ��ļ��зֶ��ָ�꣬��Ҫ��ָ���ͬ���ϲ��������ݡ� ��. �����������ʼ�����۵�ʱ�򣬾�׼����VBA��ʵ�֣�����Excel�Ŀ����߹��ߣ� �����Լ�д����ʵ�ֺꡣ���ȱ��Ҳ�����ԣ����Ǵ���ά�������Ƚ��鷳">
+    <meta name="description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
 <meta name="keywords" content="VBA">
 <meta property="og:type" content="article">
-<meta property="og:title" content="��VBA����Excel, �ϲ�����Excel�ļ�">
+<meta property="og:title" content="用VBA处理Excel, 合并两个Excel文件">
 <meta property="og:url" content="http://www.raysonblog.cn/2019/07/03/excel-vba-join/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="һ. ���󱳾���˾��Ҫ�ϲ�����Excel�ļ����������ļ����ص���ǣ��ļ��зֶ��ָ�꣬��Ҫ��ָ���ͬ���ϲ��������ݡ� ��. �����������ʼ�����۵�ʱ�򣬾�׼����VBA��ʵ�֣�����Excel�Ŀ����߹��ߣ� �����Լ�д����ʵ�ֺꡣ���ȱ��Ҳ�����ԣ����Ǵ���ά�������Ƚ��鷳">
+<meta property="og:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-03T14:59:53.773Z">
+<meta property="og:updated_time" content="2019-07-03T15:01:15.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="��VBA����Excel, �ϲ�����Excel�ļ�">
-<meta name="twitter:description" content="һ. ���󱳾���˾��Ҫ�ϲ�����Excel�ļ����������ļ����ص���ǣ��ļ��зֶ��ָ�꣬��Ҫ��ָ���ͬ���ϲ��������ݡ� ��. �����������ʼ�����۵�ʱ�򣬾�׼����VBA��ʵ�֣�����Excel�Ŀ����߹��ߣ� �����Լ�д����ʵ�ֺꡣ���ȱ��Ҳ�����ԣ����Ǵ���ά�������Ƚ��鷳">
+<meta name="twitter:title" content="用VBA处理Excel, 合并两个Excel文件">
+<meta name="twitter:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
     
 
     
@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,10 +111,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
+            POSTS: 'Entradas',
             PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -145,7 +145,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
     </div>
 
                 </td>
@@ -164,7 +164,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            ��VBA����Excel, �ϲ�����Excel�ļ�
+            用VBA处理Excel, 合并两个Excel文件
         </h1>
     
 
@@ -188,7 +188,7 @@
     <div class="article-author">
         <i class="fa fa-user"></i>
         <a href="/2019/07/03/excel-vba-join/">
-            ������
+            方子龙
         </a>
     </div>
 
@@ -219,38 +219,38 @@
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h1 id="һ-���󱳾�"><a href="#һ-���󱳾�" class="headerlink" title="һ. ���󱳾�"></a>һ. ���󱳾�</h1><p>��˾��Ҫ�ϲ�����Excel�ļ����������ļ����ص���ǣ��ļ��зֶ��ָ�꣬��Ҫ��ָ���ͬ���ϲ��������ݡ�</p>
-<h1 id="��-��������"><a href="#��-��������" class="headerlink" title="��. ��������"></a>��. ��������</h1><p>���ʼ�����۵�ʱ�򣬾�׼����VBA��ʵ�֣�����Excel�Ŀ����߹��ߣ� �����Լ�д����ʵ�ֺꡣ���ȱ��Ҳ�����ԣ����Ǵ���ά�������Ƚ��鷳��������Ҫ������ʹ�ã�������������룬�Ǻ�ͷʹ���¡�</p>
-<p>�������� ���Լ�˼���ķ�������Python������������Ϊ֮ǰ���м򵥵�ѧ���� Ҳ֪��Python�ڴ������ݷ��棬�кܴ�����ơ������﷨���򵥡�����Python����Excel��ʵ��һ��Ҳ��û�У����������滹�Ǻ�û�ס�׼�������������֡�</p>
-<p>������ bossҲ������ͬ�¸���һ�����������������û��ʲô�������С�׼���������е�ϵͳ��������һ�����ܣ��ŵ�ϵͳ�У�����Ҳ��ά�������Ҵ�ҿ������ϵͳӦ�úܿ������Ϥ���ܺʹ��롣����ά���Ի��Ǻܸߣ��������û���˵��Ҳ�������������ѧϰ��</p>
-<p>��������Щ���󣬵�Ȼ�ø�bossȷ��һ�£���ѡ�����֣�����Bossѡ��VBA��ʵ�֡�</p>
-<p>�����ȿ����ܲ�������ʵ�������ǲ��Ǻ��ѡ��ҵ�Ӧ��������<br><a id="more"></a><br>����VBA��������ǰ�����顣����ѧд�˸�С���ܣ� �﹫˾����ÿ�������ҵĹ�ʱ����ʱ�䣬��Ҫ��һ�������������ģ��˹�����+VBA����ִ�оͼ����Ӿ����ɸ㶨����Ҳ����֮ǰ��ͬ�£� ���뻹�ڣ��������Ѿ����ˣ����Ծ�û��ά���������ûʹ���ˡ�</p>
-<h1 id="��-����ʵ��"><a href="#��-����ʵ��" class="headerlink" title="��. ����ʵ��"></a>��. ����ʵ��</h1><p>�������յ�ʱ�䣬���ǻ�ʱ��˼����һ�¹��ܵľ���ʵ�֡�����ͨ��һ�����ڣ��һ�����VBAʵ����������󣬶��һ��Ǻܼ򵥾Ϳ���ʵ�ֲ����ˡ�</p>
-<p>��ôʵ��˼·����ģ���ļ�–��ѡ����Ҫ�ϲ��������ļ�–������Ӧ�ط������ݸ��Ƶ�ģ���ļ��С�</p>
+            <h1 id="一-需求背景"><a href="#一-需求背景" class="headerlink" title="一. 需求背景"></a>一. 需求背景</h1><p>公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。</p>
+<h1 id="二-方案讨论"><a href="#二-方案讨论" class="headerlink" title="二. 方案讨论"></a>二. 方案讨论</h1><p>在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。</p>
+<p>接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学过， 也知道Python在处理数据方面，有很大的优势。而且语法还简单。但用Python处理Excel的实践一次也还没有，所以心里面还是很没底。准备用它来试试手。</p>
+<p>后来， boss也安排了同事跟我一起来看看这个需求，有没有什么方案可行。准备利用现有的系统，可以做一个功能，放到系统中，而且也好维护。而且大家开发这个系统应该很快就能熟悉功能和代码。所以维护性还是很高，而对于用户来说，也基本上是零代码学习。</p>
+<p>讨论了这些过后，当然得跟boss确定一下，看选用哪种，后来Boss选了VBA来实现。</p>
+<p>问我先看看能不能做，实现起来是不是很难。我得应下来啊！<br><a id="more"></a><br>我用VBA还是两年前的事情。我自学写了个小功能， 帮公司处理每个月算大家的工时出勤时间，需要花一两天才能算清楚的，人工操作+VBA代码执行就几分钟就轻松搞定。我也问了之前的同事， 代码还在，但是我已经走了，所以就没有维护，代码就没使用了。</p>
+<h1 id="三-方案实现"><a href="#三-方案实现" class="headerlink" title="三. 方案实现"></a>三. 方案实现</h1><p>我下午抽空的时间，还是花时间思考了一下功能的具体实现。好在通过一番折腾，我还是用VBA实现了这个需求，而且还是很简单就可以实现操作了。</p>
+<p>那么实现思路：打开模板文件–》选择需要合并的两个文件–》将对应地方的数据复制到模板文件中。</p>
 <ul>
-<li><p>���ļ���</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> OpenFile()</span><br><span class="line">    FileToOpen_N = Application.GetOpenFilename(<span class="string">"*,*.*"</span>, Title:=<span class="string">"��ѡ��Ҫ�ϲ�������:"</span>, MultiSelect:=<span class="literal">True</span>)</span><br><span class="line">    OpenFile = FileToOpen_N</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
+<li><p>打开文件：</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Function</span> OpenFile()</span><br><span class="line">    FileToOpen_N = Application.GetOpenFilename(<span class="string">"*,*.*"</span>, Title:=<span class="string">"请选择要合并工作簿:"</span>, MultiSelect:=<span class="literal">True</span>)</span><br><span class="line">    OpenFile = FileToOpen_N</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">Function</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��ֹ���嶶��</p>
+<li><p>防止窗体抖动</p>
 <figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Application.DisplayAlerts = <span class="literal">False</span></span><br><span class="line">Application.ScreenUpdating = <span class="literal">False</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��ȡ��ʹ�õ�����������</p>
+<li><p>获取已使用的行数和列数</p>
 <figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Xlsheet.UsedRange.Rows.Count</span><br><span class="line">Xlsheet.UsedRange.Columns.Count</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>��ȡ��Ԫ���ֵ</p>
-<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Xlsheet.Cells(i, <span class="number">2</span>).Value <span class="comment">'i��ʾ�У� 2��ʾ��</span></span><br></pre></td></tr></table></figure>
+<li><p>获取单元格的值</p>
+<figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Xlsheet.Cells(i, <span class="number">2</span>).Value <span class="comment">'i表示行， 2表示列</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>�ڸ����·�����һ�����У����������ݵ�����</p>
+<li><p>在该行下方插入一个空行，并复制数据到该行</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">this.Rows(w + 1).Insert shift:=xlUp</span><br><span class="line">Xlsheet.Rows(f).Copy this.Rows(w)</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>ѭ��</p>
+<li><p>循环</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">For i = 1 To 10</span><br><span class="line">....</span><br><span class="line">Next</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>VBA�е�Function��Sub�ؼ��ֵ�ʹ������</p>
+<li><p>VBA中的Function和Sub关键字的使用区别</p>
 </li>
 </ul>
-<h1 id="��-�ܽ�"><a href="#��-�ܽ�" class="headerlink" title="��. �ܽ�"></a>��. �ܽ�</h1><p>��ȻVBA����������Ҫ�Ŀ������ԣ������һ���Ը��ȥ���ڡ�</p>
-<p>������ѧϰҲ�ǽ�������е����⣬�������ķ�����ֹһ�֣�ʹ���Լ����ó��ķ�ʽ�����</p>
+<h1 id="四-总结"><a href="#四-总结" class="headerlink" title="四. 总结"></a>四. 总结</h1><p>虽然VBA不是我们主要的开发语言，但是我还是愿意去折腾。</p>
+<p>技术的学习也是解决生活中的问题，解决问题的方案不止一种，使用自己最擅长的方式解决。</p>
 
         
         
@@ -259,7 +259,7 @@
         <footer class="article-footer">
             <div class="col-sm-10">
                 <div>
-                    <b>本文链接</b>：<a href="/2019/07/03/excel-vba-join/">��VBA����Excel, �ϲ�����Excel�ļ�</a>
+                    <b>本文链接</b>：<a href="/2019/07/03/excel-vba-join/">用VBA处理Excel, 合并两个Excel文件</a>
                 </div>
                 <div>
                     
@@ -277,7 +277,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjxndavyh000040st0l6mqxxj" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjxndcoq6000084stjggd90be" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
