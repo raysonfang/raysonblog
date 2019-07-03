@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="方子龙">
 <meta property="og:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-03T15:01:15.294Z">
+<meta property="og:updated_time" content="2019-07-03T15:03:37.925Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用VBA处理Excel, 合并两个Excel文件">
 <meta name="twitter:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
@@ -92,7 +92,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,10 +111,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -145,7 +145,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -222,7 +222,7 @@
             <h1 id="一-需求背景"><a href="#一-需求背景" class="headerlink" title="一. 需求背景"></a>一. 需求背景</h1><p>公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。</p>
 <h1 id="二-方案讨论"><a href="#二-方案讨论" class="headerlink" title="二. 方案讨论"></a>二. 方案讨论</h1><p>在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。</p>
 <p>接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学过， 也知道Python在处理数据方面，有很大的优势。而且语法还简单。但用Python处理Excel的实践一次也还没有，所以心里面还是很没底。准备用它来试试手。</p>
-<p>后来， boss也安排了同事跟我一起来看看这个需求，有没有什么方案可行。准备利用现有的系统，可以做一个功能，放到系统中，而且也好维护。而且大家开发这个系统应该很快就能熟悉功能和代码。所以维护性还是很高，而对于用户来说，也基本上是零代码学习。</p>
+<p>后来， boss也安排了同事跟我一起来看看这个需求，有没有什么方案可行。准备利用现有的系统，可以做一个功能，放到系统中，而且也好维护。大家开发这个系统应该很快就能熟悉功能和代码。所以维护性还是很高，而对于用户来说，也基本上是零代码学习。</p>
 <p>讨论了这些过后，当然得跟boss确定一下，看选用哪种，后来Boss选了VBA来实现。</p>
 <p>问我先看看能不能做，实现起来是不是很难。我得应下来啊！<br><a id="more"></a><br>我用VBA还是两年前的事情。我自学写了个小功能， 帮公司处理每个月算大家的工时出勤时间，需要花一两天才能算清楚的，人工操作+VBA代码执行就几分钟就轻松搞定。我也问了之前的同事， 代码还在，但是我已经走了，所以就没有维护，代码就没使用了。</p>
 <h1 id="三-方案实现"><a href="#三-方案实现" class="headerlink" title="三. 方案实现"></a>三. 方案实现</h1><p>我下午抽空的时间，还是花时间思考了一下功能的具体实现。好在通过一番折腾，我还是用VBA实现了这个需求，而且还是很简单就可以实现操作了。</p>
@@ -277,7 +277,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjxndcoq6000084stjggd90be" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjxndfnn800006sstcpuai21p" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
