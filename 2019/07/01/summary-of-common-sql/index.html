@@ -63,7 +63,26 @@
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
-
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    showProcessingMessages: false,
+    messageStyle: "none",
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+        inlineMath:  [ ["$", "$"] ],
+        displayMath: [ ["$$","$$"] ],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+        ignoreClass:"comment-content"
+    },
+    "HTML-CSS": {
+        availableFonts: ["STIX","TeX"],
+        showMathMenu: false
+    }
+});
+MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+</script>
+    <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 </html>
 <body>
@@ -93,7 +112,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -112,9 +131,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
+            CATEGORIES: 'Categories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -146,7 +165,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -246,7 +265,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/01/summary-of-common-sql/" data-id="cjxo8olg60003lost478parwv" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/01/summary-of-common-sql/" data-id="cjxu4brm90006zkstjzv1siiz" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -346,7 +365,6 @@
 
     
 </article>
-
 
     
     <section id="comments">
@@ -471,7 +489,8 @@
                 <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
                     趣学Spring Boot
                 </a>
-                <p>正在更新中...</p>
+                <p>史上最详细图文讲解教程</p>
+                <p>正在热更新中...</p>
             </div>
         </div>
         <div class="row">
@@ -514,7 +533,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/markdown/">markdown</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -522,7 +541,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Spring-Boot/" style="font-size: 10px;">Spring Boot</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/mathJax/" style="font-size: 10px;">mathJax</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
         </div>
     </div>
 

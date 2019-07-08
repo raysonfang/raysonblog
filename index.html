@@ -62,7 +62,26 @@
             s.parentNode.insertBefore(bp, s);
         })();
     </script>
-
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    showProcessingMessages: false,
+    messageStyle: "none",
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+        inlineMath:  [ ["$", "$"] ],
+        displayMath: [ ["$$","$$"] ],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+        ignoreClass:"comment-content"
+    },
+    "HTML-CSS": {
+        availableFonts: ["STIX","TeX"],
+        showMathMenu: false
+    }
+});
+MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+</script>
+    <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 </html>
 <body>
@@ -92,7 +111,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -111,9 +130,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
+            CATEGORIES: 'Categories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -145,7 +164,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -525,8 +544,18 @@
 </div>
             
                 <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
+</div>
+            
+                <div class="index-card-body-list">
         <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/01</span>
         <a href="/2019/07/01/summary-of-common-sql/" target="_blank" itemprop="url">常用SQL总结</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
 </div>
             
                 <div class="index-card-body-list">
@@ -549,6 +578,16 @@
             <h3>最新发布</h3>
         </div>
         <div class="index-card-body">
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
+</div>
             
                 <div class="index-card-body-list">
         <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/03</span>
@@ -574,6 +613,157 @@
     </div>
 </div>
 
+
+    <article id="post-hexo-md-mathjax" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/07/04/hexo-md-mathjax/">Hexo | markdown中集成mathjax能编写数学公式</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div>
+        <span class="label label-success" style="font-size: 14px">原创</span>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/07/04/hexo-md-mathjax/">
+            <time datetime="2019-07-04T14:37:23.000Z" itemprop="datePublished">2019-07-04</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-author">
+        <i class="fa fa-user"></i>
+        <a href="/2019/07/04/hexo-md-mathjax/">
+            方子龙
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo/">Hexo</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Hexo/markdown/">markdown</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/mathJax/">mathJax</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h2><p>由于Hexo的MarkDown中默认不支持数学公式的渲染，我在简书上写的时候，想改变文字的颜色，让文章增添点色彩。结果简书还真是可以做到呢。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;居中&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
+<p>后来不断的深挖，原来是因为简书上支持数学公式的渲染语法，最终看渲染过后的效果，看代码发现，是把文字转换成了一张张小图片，渲染出来的。</p>
+<p>于是我在自己的博客上试了一番，发现不行。所以也准备给自己的博客加上这个功能呢。</p>
+<p>接下来说说整合过程</p></p>
+            <p class="article-more-link" style="text-align: center">
+                <a href="/2019/07/04/hexo-md-mathjax/">阅读更多</a>
+            </p>
+        
+        
+        </div>
+        
+    </div>
+    
+</article>
+
+    
+
+    <article id="post-spring-boot-all-01-easy-web-application" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/07/04/spring-boot-all-01-easy-web-application/">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div>
+        <span class="label label-success" style="font-size: 14px">原创</span>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">
+            <time datetime="2019-07-04T05:41:48.000Z" itemprop="datePublished">2019-07-04</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-author">
+        <i class="fa fa-user"></i>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">
+            方子龙
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 id="一-学习之前先思考3个问题，带着问题去寻找答案"><a href="#一-学习之前先思考3个问题，带着问题去寻找答案" class="headerlink" title="一. 学习之前先思考3个问题，带着问题去寻找答案"></a>一. 学习之前先思考3个问题，带着问题去寻找答案</h2><blockquote>
+<ul>
+<li>1.简要说明Spring Boot是什么，有什么特点。</li>
+<li>2.如何初始化一个Spring Boot工程，有哪些工具可以快速初始化Spring Boot工程呢？</li>
+<li>3.Spring Boot的项目工程结构有什么样的特点呢？</li>
+</ul>
+</blockquote></p>
+            <p class="article-more-link" style="text-align: center">
+                <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">阅读更多</a>
+            </p>
+        
+        
+        </div>
+        
+    </div>
+    
+</article>
+
+    
 
     <article id="post-excel-vba-join" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
@@ -649,7 +839,6 @@
     
 </article>
 
-
     
 
     <article id="post-summary-of-common-sql" class="article article-type-post" itemscope itemprop="blogPost">
@@ -718,7 +907,6 @@
     </div>
     
 </article>
-
 
     
 
@@ -794,7 +982,6 @@
     </div>
     
 </article>
-
 
     
 </section>
@@ -894,7 +1081,8 @@
                 <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
                     趣学Spring Boot
                 </a>
-                <p>正在更新中...</p>
+                <p>史上最详细图文讲解教程</p>
+                <p>正在热更新中...</p>
             </div>
         </div>
         <div class="row">
@@ -937,7 +1125,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/markdown/">markdown</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li></ul>
         </div>
     </div>
 
@@ -945,7 +1133,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Spring-Boot/" style="font-size: 10px;">Spring Boot</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/mathJax/" style="font-size: 10px;">mathJax</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a>
         </div>
     </div>
 

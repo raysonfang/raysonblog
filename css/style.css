@@ -954,15 +954,17 @@ a.article-title:hover {
   position: relative;
   font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
   font-size: 1.1em;
-  margin: 0 -20px;
-  padding: 10px 20px 10px 54px;
+  padding: 10px 20px 10px 20px;
   background: #fcfcfc;
-  border-left: 4px solid #eee;
+  border-left: 4px solid #5cb85c;
+  border-radius: 0.25em;
+}
+.article-entry blockquote ul {
+  margin-top: 0;
 }
 .article-entry blockquote:before {
   top: 20px;
   left: 10px;
-  content: "\f10d";
   color: #e2e2e2;
   font-size: 32px;
   font-family: FontAwesome;
