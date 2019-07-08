@@ -8,18 +8,20 @@
     
     <title>Hexo | markdown中集成mathjax能编写数学公式 | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="一. 前言由于Hexo的MarkDown中默认不支持数学公式的渲染，我在简书上写的时候，想改变文字的颜色，让文章增添点色彩。结果简书还真是可以做到呢。1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;居中&amp;#125;&amp;#125;$$ 后来不断的深挖，原来是因为简书上支持数学公式的渲染语法，最终看渲染过后的效果，看代码发现，是把文字转换成了一张张小">
+    <meta name="description" content="一. 前言我经常在简书上用MarkDown写文章，今天，突然有个想法，就是想改变一下文字的颜色，让文章看起来酷炫一点，更具有吸引力。毕竟纯黑色的技术性文章看着蛮枯燥，偶尔来点颜色来润润调也很不错额😁 经过一番折腾，简书还真可以这样玩，突然感觉挺高大上的。下面就是在简书中的MarkDown编辑器中1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;">
 <meta name="keywords" content="Hexo,mathJax">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo | markdown中集成mathjax能编写数学公式">
 <meta property="og:url" content="http://www.raysonblog.cn/2019/07/04/hexo-md-mathjax/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="一. 前言由于Hexo的MarkDown中默认不支持数学公式的渲染，我在简书上写的时候，想改变文字的颜色，让文章增添点色彩。结果简书还真是可以做到呢。1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;居中&amp;#125;&amp;#125;$$ 后来不断的深挖，原来是因为简书上支持数学公式的渲染语法，最终看渲染过后的效果，看代码发现，是把文字转换成了一张张小">
+<meta property="og:description" content="一. 前言我经常在简书上用MarkDown写文章，今天，突然有个想法，就是想改变一下文字的颜色，让文章看起来酷炫一点，更具有吸引力。毕竟纯黑色的技术性文章看着蛮枯燥，偶尔来点颜色来润润调也很不错额😁 经过一番折腾，简书还真可以这样玩，突然感觉挺高大上的。下面就是在简书中的MarkDown编辑器中1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-04T14:39:17.278Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-45d269301103491a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-07-08T09:29:39.651Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo | markdown中集成mathjax能编写数学公式">
-<meta name="twitter:description" content="一. 前言由于Hexo的MarkDown中默认不支持数学公式的渲染，我在简书上写的时候，想改变文字的颜色，让文章增添点色彩。结果简书还真是可以做到呢。1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;居中&amp;#125;&amp;#125;$$ 后来不断的深挖，原来是因为简书上支持数学公式的渲染语法，最终看渲染过后的效果，看代码发现，是把文字转换成了一张张小">
+<meta name="twitter:description" content="一. 前言我经常在简书上用MarkDown写文章，今天，突然有个想法，就是想改变一下文字的颜色，让文章看起来酷炫一点，更具有吸引力。毕竟纯黑色的技术性文章看着蛮枯燥，偶尔来点颜色来润润调也很不错额😁 经过一番折腾，简书还真可以这样玩，突然感觉挺高大上的。下面就是在简书中的MarkDown编辑器中1$$\color&amp;#123;green&amp;#125;&amp;#123;\Large\mathbf&amp;#123;">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7253165-45d269301103491a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
     
 
     
@@ -64,24 +66,24 @@
         })();
     </script>
     <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    showProcessingMessages: false,
-    messageStyle: "none",
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX", "output/HTML-CSS"],
-    tex2jax: {
-        inlineMath:  [ ["$", "$"] ],
-        displayMath: [ ["$$","$$"] ],
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
-        ignoreClass:"comment-content"
-    },
-    "HTML-CSS": {
-        availableFonts: ["STIX","TeX"],
-        showMathMenu: false
-    }
-});
-MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-</script>
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] ],
+                displayMath: [ ["$$","$$"] ],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                ignoreClass:"comment-content"
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX","TeX"],
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    </script>
     <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 </html>
@@ -112,7 +114,7 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -131,10 +133,10 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'pos',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'kategori',
+            TAGS: 'tag',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -165,7 +167,7 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
     </div>
 
                 </td>
@@ -239,11 +241,24 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
         <div class="article-entry" itemprop="articleBody">
         
             
-            <h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h2><p>由于Hexo的MarkDown中默认不支持数学公式的渲染，我在简书上写的时候，想改变文字的颜色，让文章增添点色彩。结果简书还真是可以做到呢。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;居中&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
-<p>后来不断的深挖，原来是因为简书上支持数学公式的渲染语法，最终看渲染过后的效果，看代码发现，是把文字转换成了一张张小图片，渲染出来的。</p>
-<p>于是我在自己的博客上试了一番，发现不行。所以也准备给自己的博客加上这个功能呢。</p>
-<p>接下来说说整合过程</p>
+            <h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h2><p>我经常在简书上用MarkDown写文章，今天，突然有个想法，就是想改变一下文字的颜色，让文章看起来酷炫一点，更具有吸引力。毕竟纯黑色的技术性文章看着蛮枯燥，偶尔来点颜色来润润调也很不错额😁</p>
+<p>经过一番折腾，简书还真可以这样玩，突然感觉挺高大上的。下面就是在简书中的MarkDown编辑器中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;居中&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
+<p>渲染后的效果：</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7253165-45d269301103491a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="渲染后的效果"></p>
+<p>看着上面奇怪的语法，对于不熟悉MathJax的我来说，开始以为是什么黑科技，都能被广大网友发现，发自内心的崇拜。</p>
+<p>后来不断的深挖，通过调试工具查看网页代码，发现点端倪，有一个“math”单词, 直译“数学”，我大概明白点了，简书Markdown支持数学公式的渲染语法。</p>
+<p>最后, 通过查找资料，找到Markdown中支持数学公式的语法，跟简书中的语法大体一致。</p>
+<p>于是乎，我又在自己搭建的博客上试了一番，发现不行。所以也准备给自己的博客加上这个功能呢。</p>
+<p>那先看看整合后的效果吧<br>效果：<br>$$\color{green}{\Large\mathbf{Hello!\ 我是MathJax}}$$</p>
+<p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;Hello!\ 我是MathJax&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
+<p>接下来就说说整合过程，如何也给自己的博客添加上数学公式的渲染。</p>
 <a id="more"></a>
+<ul>
+<li><h4 id="第一步：在-head-头之间粘贴如下代码："><a href="#第一步：在-head-头之间粘贴如下代码：" class="headerlink" title="第一步：在 head 头之间粘贴如下代码："></a>第一步：在 <code>head</code> 头之间粘贴如下代码：</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/x-mathjax-config"</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">        MathJax.Hub.Config(&#123;</span></span><br><span class="line"><span class="undefined">            showProcessingMessages: false,</span></span><br><span class="line"><span class="undefined">            messageStyle: "none",</span></span><br><span class="line"><span class="undefined">            extensions: ["tex2jax.js"],</span></span><br><span class="line"><span class="undefined">            jax: ["input/TeX", "output/HTML-CSS"],</span></span><br><span class="line"><span class="undefined">            tex2jax: &#123;</span></span><br><span class="line"><span class="undefined">                inlineMath:  [ ["$", "$"] ],</span></span><br><span class="line"><span class="undefined">                displayMath: [ ["$$","$$"] ],</span></span><br><span class="line"><span class="undefined">                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],</span></span><br><span class="line"><span class="undefined">                ignoreClass:"comment-content"</span></span><br><span class="line"><span class="undefined">            &#125;,</span></span><br><span class="line"><span class="undefined">            "HTML-CSS": &#123;</span></span><br><span class="line"><span class="undefined">                availableFonts: ["STIX","TeX"],</span></span><br><span class="line"><span class="undefined">                showMathMenu: false</span></span><br><span class="line"><span class="undefined">            &#125;</span></span><br><span class="line"><span class="undefined">        &#125;);</span></span><br><span class="line"><span class="undefined">        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);</span></span><br><span class="line"><span class="undefined">    </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><h4 id="第二步：直接使用就行了"><a href="#第二步：直接使用就行了" class="headerlink" title="第二步：直接使用就行了"></a>第二步：直接使用就行了</h4></li>
+</ul>
+<p>效果：<br>$$<br>\color{blue}{\huge\mathbf{看}}<br>\color{red}{\Large\mathbf{五}}<br>\color{green}{\normalsize\mathbf{彩}}<br>\color{blue}{\small\mathbf{缤}}<br>\color{blue}{\tiny\mathbf{色}}<br>\color{blue}{\tiny\mathbf{看}}<br>\color{red}{\scriptsize\mathbf{五}}<br>\color{green}{\small\mathbf{彩}}<br>\color{blue}{\normalsize\mathbf{缤}}<br>\color{blue}{\huge\mathbf{色}}<br>$$<br>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\color&#123;blue&#125;&#123;\huge\mathbf&#123;看&#125;&#125;</span><br><span class="line">\color&#123;red&#125;&#123;\Large\mathbf&#123;五&#125;&#125;</span><br><span class="line">\color&#123;green&#125;&#123;\normalsize\mathbf&#123;彩&#125;&#125;</span><br><span class="line">\color&#123;blue&#125;&#123;\small\mathbf&#123;缤&#125;&#125;</span><br><span class="line">\color&#123;blue&#125;&#123;\tiny\mathbf&#123;色&#125;&#125;</span><br><span class="line">\color&#123;blue&#125;&#123;\tiny\mathbf&#123;看&#125;&#125;</span><br><span class="line">\color&#123;red&#125;&#123;\scriptsize\mathbf&#123;五&#125;&#125;</span><br><span class="line">\color&#123;green&#125;&#123;\small\mathbf&#123;彩&#125;&#125;</span><br><span class="line">\color&#123;blue&#125;&#123;\normalsize\mathbf&#123;缤&#125;&#125;</span><br><span class="line">\color&#123;blue&#125;&#123;\huge\mathbf&#123;色&#125;&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure></p>
 
         
         
@@ -270,7 +285,7 @@ MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/04/hexo-md-mathjax/" data-id="cjxu4jg20000258stdh41zesq" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/04/hexo-md-mathjax/" data-id="cjxu4y6vg0003ggstu0wkv7wy" class="article-share-link"><i class="fa fa-share"></i>Bagikan</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
