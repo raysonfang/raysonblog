@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="方子龙">
 <meta property="og:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-03T15:03:37.925Z">
+<meta property="og:updated_time" content="2019-07-18T05:47:16.297Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用VBA处理Excel, 合并两个Excel文件">
 <meta name="twitter:description" content="一. 需求背景公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。 二. 方案讨论在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。 接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学">
@@ -112,7 +112,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -131,10 +131,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'pos',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'kategori',
-            TAGS: 'tag',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -165,7 +165,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Cari" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -239,6 +239,11 @@
         <div class="article-entry" itemprop="articleBody">
         
             
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一-需求背景"><span class="toc-number">1.</span> <span class="toc-text">一. 需求背景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二-方案讨论"><span class="toc-number">2.</span> <span class="toc-text">二. 方案讨论</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三-方案实现"><span class="toc-number">3.</span> <span class="toc-text">三. 方案实现</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四-总结"><span class="toc-number">4.</span> <span class="toc-text">四. 总结</span></a></li></ol>
+                </div>
+            
             <h1 id="一-需求背景"><a href="#一-需求背景" class="headerlink" title="一. 需求背景"></a>一. 需求背景</h1><p>公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。</p>
 <h1 id="二-方案讨论"><a href="#二-方案讨论" class="headerlink" title="二. 方案讨论"></a>二. 方案讨论</h1><p>在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。</p>
 <p>接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学过， 也知道Python在处理数据方面，有很大的优势。而且语法还简单。但用Python处理Excel的实践一次也还没有，所以心里面还是很没底。准备用它来试试手。</p>
@@ -297,7 +302,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjy5jb0480003fgst7m90dusw" class="article-share-link"><i class="fa fa-share"></i>Bagikan</a>
+    <a data-url="http://www.raysonblog.cn/2019/07/03/excel-vba-join/" data-id="cjy88w63b0002skstxux8t7dc" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
