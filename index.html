@@ -113,7 +113,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -132,10 +132,10 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Entradas',
+            POSTS: 'Articles',
             PAGES: 'Pages',
-            CATEGORIES: 'Categorias',
-            TAGS: 'Etiquetas',
+            CATEGORIES: 'Catégories',
+            TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
         ROOT_URL: '/',
@@ -168,7 +168,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
     </div>
 
                 </td>
@@ -548,18 +548,23 @@
 </div>
             
                 <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
-        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
-</div>
-            
-                <div class="index-card-body-list">
         <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
         <a href="/2019/07/29/15-chrome-plugins/" target="_blank" itemprop="url">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
 </div>
             
                 <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">jdk1.8-source-analysis-01</a>
+</div>
+            
+                <div class="index-card-body-list">
         <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
         <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
 </div>
             
                 <div class="index-card-body-list">
@@ -592,6 +597,11 @@
             <h3>最新发布</h3>
         </div>
         <div class="index-card-body">
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">jdk1.8-source-analysis-01</a>
+</div>
             
                 <div class="index-card-body-list">
         <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
@@ -637,6 +647,88 @@
     </div>
 </div>
 
+
+    <article id="post-jdk1-8-source-analysis-01" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/08/06/jdk1-8-source-analysis-01/">jdk1.8-source-analysis-01</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div>
+        <span class="label label-success" style="font-size: 14px">原创</span>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/">
+            <time datetime="2019-08-06T02:27:30.000Z" itemprop="datePublished">2019-08-06</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-author">
+        <i class="fa fa-user"></i>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/">
+            方子龙
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/源码分析/">源码分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/源码分析/">源码分析</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><blockquote>
+<p>序言：目前准备看一看源码，来提升自己的技术实力。同时现在好多面试官都喜欢问源码，问你是否读过JDK源码等等？<br>针对如何阅读源码，也请教了我的老师。下面就先来看看老师的回答，也许会有帮助呢。</p>
+</blockquote>
+<p>我很尊敬的一位老师，他姓唐，算是我入门编程的启蒙老师，有10多年的C/C++开发经验，我有幸跟着老师的C++/C课程，自学完，而且还学了数据结构。他的讲课很有风格，幽默风趣，有条有理，深入浅出。</p>
+<p>不过后来，我决定走Java这条不归路。</p>
+<p>我向老师请教了一个问题：<strong>关于如何阅读源码的问题？不乏味，思路清晰。就像他的课程一样，基本上很少会有疲倦，枯燥的感觉。</strong></p>
+<p><strong>唐老师，回答道：读源码是要建立在你的基础经验足够的情况下。否则很容易看不懂</strong></p>
+<p>我继续又问：<strong>那对于刚刚想尝试去读源码的同学来说，有没有一些建议呢？我尝试着读了一些，但感觉很无厘头。</strong></p>
+<p>唐老师，回答道： <strong>读源码是要读和你水平相匹配的。好多人好高骛远，简单的，能读懂的不屑， 想读的，又读不懂，高不成低不就。我的建议是从教学型项目读起。</strong></p>
+<p>小插曲：有位朋友说，源码写的就一定比我写的好吗？ 哈哈，这回答倒也是刷新我的认知。</p>
+<p><strong>另外一位朋友有举例说： 如果读redis源码， 我会先看一本讲Redis原理的书，然后再看源码。</strong></p>
+<p>以上就是我这次请教的过程，总结一下：先懂原理，知道一个全局框架，再结合教学型项目或自己写些小案例，再深入源码。</p></p>
+            <p class="article-more-link" style="text-align: center">
+                <a href="/2019/08/06/jdk1-8-source-analysis-01/">阅读更多</a>
+            </p>
+        
+        
+        </div>
+        
+    </div>
+    
+</article>
+
+    
 
     <article id="post-15-chrome-plugins" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
@@ -1303,7 +1395,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">分类</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/markdown/">markdown</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/精美工具/">精美工具</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/markdown/">markdown</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/源码分析/">源码分析</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/精美工具/">精美工具</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -1311,7 +1403,7 @@
     <div class="widget-wrap widget-panel">
         <h3 class="widget-title">标签云</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Spring-Boot/" style="font-size: 20px;">Spring Boot</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/mathJax/" style="font-size: 10px;">mathJax</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/精美工具/" style="font-size: 10px;">精美工具</a>
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Spring-Boot/" style="font-size: 20px;">Spring Boot</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/mathJax/" style="font-size: 10px;">mathJax</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/源码分析/" style="font-size: 10px;">源码分析</a> <a href="/tags/精美工具/" style="font-size: 10px;">精美工具</a>
         </div>
     </div>
 
