@@ -6,21 +6,21 @@
     <meta name="google-site-verification" content="Gwh2EnLnIMkr6D-Uyzrgm3qN7zFQgCZunuaz9lJJNxg">
     <link rel="shortcut icon" href="/favicon-32.ico">
     
-    <title>jdk1.8-source-analysis-01 | 方子龙</title>
+    <title>JDK1.8源码分析01之学习建议（可以延伸到其他源码学习） | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="序言：目前准备看一看源码，来提升自己的技术实力。同时现在好多面试官都喜欢问源码，问你是否读过JDK源码等等？针对如何阅读源码，也请教了我的老师。下面就先来看看老师的回答，也许会有帮助呢。  我很尊敬的一位老师，他姓唐，算是我入门编程的启蒙老师，有10多年的C/C++开发经验，我有幸跟着老师的C++/C课程，自学完，而且还学了数据结构。他的讲课很有风格，幽默风趣，有条有理，深入浅出。 不过后来，我">
 <meta name="keywords" content="源码分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jdk1.8-source-analysis-01">
+<meta property="og:title" content="JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）">
 <meta property="og:url" content="http://www.raysonblog.cn/2019/08/06/jdk1-8-source-analysis-01/index.html">
 <meta property="og:site_name" content="方子龙">
 <meta property="og:description" content="序言：目前准备看一看源码，来提升自己的技术实力。同时现在好多面试官都喜欢问源码，问你是否读过JDK源码等等？针对如何阅读源码，也请教了我的老师。下面就先来看看老师的回答，也许会有帮助呢。  我很尊敬的一位老师，他姓唐，算是我入门编程的启蒙老师，有10多年的C/C++开发经验，我有幸跟着老师的C++/C课程，自学完，而且还学了数据结构。他的讲课很有风格，幽默风趣，有条有理，深入浅出。 不过后来，我">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-c349f2aa1c5ca0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-cd730e19fb02ae3d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-08-06T02:31:36.816Z">
+<meta property="og:updated_time" content="2019-08-06T02:33:09.512Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jdk1.8-source-analysis-01">
+<meta name="twitter:title" content="JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）">
 <meta name="twitter:description" content="序言：目前准备看一看源码，来提升自己的技术实力。同时现在好多面试官都喜欢问源码，问你是否读过JDK源码等等？针对如何阅读源码，也请教了我的老师。下面就先来看看老师的回答，也许会有帮助呢。  我很尊敬的一位老师，他姓唐，算是我入门编程的启蒙老师，有10多年的C/C++开发经验，我有幸跟着老师的C++/C课程，自学完，而且还学了数据结构。他的讲课很有风格，幽默风趣，有条有理，深入浅出。 不过后来，我">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7253165-c349f2aa1c5ca0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
     
@@ -117,7 +117,7 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
@@ -136,9 +136,9 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Articles',
+            POSTS: 'Posts',
             PAGES: 'Pages',
-            CATEGORIES: 'Catégories',
+            CATEGORIES: 'Categories',
             TAGS: 'Tags',
             UNTITLED: '(Untitled)',
         },
@@ -172,7 +172,7 @@
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Rechercher" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
     </div>
 
                 </td>
@@ -191,7 +191,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            jdk1.8-source-analysis-01
+            JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）
         </h1>
     
 
@@ -291,7 +291,7 @@
         <footer class="article-footer">
             <div class="col-sm-10">
                 <div>
-                    <b>本文链接</b>：<a href="/2019/08/06/jdk1-8-source-analysis-01/">jdk1.8-source-analysis-01</a>
+                    <b>本文链接</b>：<a href="/2019/08/06/jdk1-8-source-analysis-01/">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
                 </div>
                 <div>
                     
@@ -309,7 +309,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/08/06/jdk1-8-source-analysis-01/" data-id="cjyz7j76h0006ksst7855ph5i" class="article-share-link"><i class="fa fa-share"></i>Partager</a>
+    <a data-url="http://www.raysonblog.cn/2019/08/06/jdk1-8-source-analysis-01/" data-id="cjyz7ljd90008rgstzn0bc1ab" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
