@@ -958,8 +958,12 @@ a.article-title:hover {
   background: #fcfcfc;
   border-left: 4px solid #5cb85c;
   border-radius: 0.25em;
+  margin-top: 5px;
 }
 .article-entry blockquote ul {
+  margin-top: 10px 0 10px 0;
+}
+.article-entry blockquote p {
   margin-top: 0;
 }
 .article-entry blockquote:before {
