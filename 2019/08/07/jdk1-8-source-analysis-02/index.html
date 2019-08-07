@@ -6,40 +6,22 @@
     <meta name="google-site-verification" content="Gwh2EnLnIMkr6D-Uyzrgm3qN7zFQgCZunuaz9lJJNxg">
     <link rel="shortcut icon" href="/favicon-32.ico">
     
-    <title>15款好用超赞的chrome插件， 开发者们的必备工具库~ | 方子龙</title>
+    <title>JDK1.8源码分析02之阅读源码顺序 | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="今天推荐一波Chrome插件干货。这些插件带给我开发效率上的提升。所以在这里整理一下，分享给朋友们。  作为一名程序开发者，推荐一波常用的chrome插件，用了就舍不得丢，包括免费翻墙工具，github便捷代码浏览，截图，广告拦截，SQL格式化等等。  1.谷歌访问助手2.SourceGraph3.The Great Suspender4.Adblock5.JSONView6.二维码生成7.掘金8">
-<meta name="keywords" content="精美工具">
+    <meta name="description" content="序言：阅读JDK源码应该从何开始，有计划，有步骤的深入学习呢？  下面就分享一篇比较好的学习源码顺序的文章，给了我们再阅读源码时，一个指导性的标志，而不会迷失方向。 很多java开发的小伙伴都会阅读jdk源码，然而确不知道应该从哪读起。有些零零散散的学习，知识与知识之间没有相互联系起来，不成知识体系。以下为小编整理的通常所需阅读的源码范围。标题为包名，后面序号为优先级1-4，优先级递减 1、ja">
+<meta name="keywords" content="源码分析">
 <meta property="og:type" content="article">
-<meta property="og:title" content="15款好用超赞的chrome插件， 开发者们的必备工具库~">
-<meta property="og:url" content="http://www.raysonblog.cn/2019/07/29/15-chrome-plugins/index.html">
+<meta property="og:title" content="JDK1.8源码分析02之阅读源码顺序">
+<meta property="og:url" content="http://www.raysonblog.cn/2019/08/07/jdk1-8-source-analysis-02/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="今天推荐一波Chrome插件干货。这些插件带给我开发效率上的提升。所以在这里整理一下，分享给朋友们。  作为一名程序开发者，推荐一波常用的chrome插件，用了就舍不得丢，包括免费翻墙工具，github便捷代码浏览，截图，广告拦截，SQL格式化等等。  1.谷歌访问助手2.SourceGraph3.The Great Suspender4.Adblock5.JSONView6.二维码生成7.掘金8">
+<meta property="og:description" content="序言：阅读JDK源码应该从何开始，有计划，有步骤的深入学习呢？  下面就分享一篇比较好的学习源码顺序的文章，给了我们再阅读源码时，一个指导性的标志，而不会迷失方向。 很多java开发的小伙伴都会阅读jdk源码，然而确不知道应该从哪读起。有些零零散散的学习，知识与知识之间没有相互联系起来，不成知识体系。以下为小编整理的通常所需阅读的源码范围。标题为包名，后面序号为优先级1-4，优先级递减 1、ja">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-2b24e88e3eadbe7d?imageMogr2/auto-orient/strip">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-3840efa69314230f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-c87f58b01cd4e98f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-33d5f678dc518d6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-2f2fbcffb8ea13c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-61ba59d664e4a111.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-a25afe47a531a55d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-0a8d8be48a025b4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-cb051fdbb0647817.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-cd827619f4abd7cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-f0a4d07841bf45eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-2af5980dd0bee569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-8a2b65fa498a4d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-13c331d6821b6a4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-8139eaa19fa804da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-02f0dbf9cfc18cf8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-3264cb5247c3d09b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-0f4fb97aa07ef9c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-1fcc6b3819cd2e3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2019-07-29T06:42:03.569Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-5cd44c9bf04084bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-08-07T08:20:53.383Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="15款好用超赞的chrome插件， 开发者们的必备工具库~">
-<meta name="twitter:description" content="今天推荐一波Chrome插件干货。这些插件带给我开发效率上的提升。所以在这里整理一下，分享给朋友们。  作为一名程序开发者，推荐一波常用的chrome插件，用了就舍不得丢，包括免费翻墙工具，github便捷代码浏览，截图，广告拦截，SQL格式化等等。  1.谷歌访问助手2.SourceGraph3.The Great Suspender4.Adblock5.JSONView6.二维码生成7.掘金8">
-<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7253165-2b24e88e3eadbe7d?imageMogr2/auto-orient/strip">
+<meta name="twitter:title" content="JDK1.8源码分析02之阅读源码顺序">
+<meta name="twitter:description" content="序言：阅读JDK源码应该从何开始，有计划，有步骤的深入学习呢？  下面就分享一篇比较好的学习源码顺序的文章，给了我们再阅读源码时，一个指导性的标志，而不会迷失方向。 很多java开发的小伙伴都会阅读jdk源码，然而确不知道应该从哪读起。有些零零散散的学习，知识与知识之间没有相互联系起来，不成知识体系。以下为小编整理的通常所需阅读的源码范围。标题为包名，后面序号为优先级1-4，优先级递减 1、ja">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7253165-5cd44c9bf04084bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
     
 
     
@@ -200,7 +182,7 @@
 
         <div class="outer row">
             
-            <section id="main" class="col-lg-9"><article id="post-15-chrome-plugins" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main" class="col-lg-9"><article id="post-jdk1-8-source-analysis-02" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
@@ -208,7 +190,7 @@
                 
     
         <h1 class="article-title" itemprop="name">
-            15款好用超赞的chrome插件， 开发者们的必备工具库~
+            JDK1.8源码分析02之阅读源码顺序
         </h1>
     
 
@@ -222,8 +204,8 @@
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/2019/07/29/15-chrome-plugins/">
-            <time datetime="2019-07-29T06:27:43.000Z" itemprop="datePublished">2019-07-29</time>
+        <a href="/2019/08/07/jdk1-8-source-analysis-02/">
+            <time datetime="2019-08-07T08:16:22.000Z" itemprop="datePublished">2019-08-07</time>
         </a>
     </div>
 
@@ -231,7 +213,7 @@
                         
     <div class="article-author">
         <i class="fa fa-user"></i>
-        <a href="/2019/07/29/15-chrome-plugins/">
+        <a href="/2019/08/07/jdk1-8-source-analysis-02/">
             方子龙
         </a>
     </div>
@@ -240,13 +222,13 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/精美工具/">精美工具</a>
+        <a class="article-category-link" href="/categories/源码分析/">源码分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/精美工具/">精美工具</a>
+        <a class="tag-link" href="/tags/源码分析/">源码分析</a>
     </div>
 
                         
@@ -265,63 +247,30 @@
             
                 <div id="toc" class="toc-article">
                 <strong class="toc-title">目录</strong>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-谷歌访问助手"><span class="toc-number">1.</span> <span class="toc-text">1.谷歌访问助手</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-SourceGraph"><span class="toc-number">2.</span> <span class="toc-text">2.SourceGraph</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-The-Great-Suspender"><span class="toc-number">3.</span> <span class="toc-text">3.The Great Suspender</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-Adblock"><span class="toc-number">4.</span> <span class="toc-text">4.Adblock</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-JSONView"><span class="toc-number">5.</span> <span class="toc-text">5.JSONView</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-二维码生成"><span class="toc-number">6.</span> <span class="toc-text">6.二维码生成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-掘金"><span class="toc-number">7.</span> <span class="toc-text">7.掘金</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#8-Octotree"><span class="toc-number">8.</span> <span class="toc-text">8.Octotree</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#9-Scrn-li"><span class="toc-number">9.</span> <span class="toc-text">9.Scrn.li</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#10-SQL-Format"><span class="toc-number">10.</span> <span class="toc-text">10.SQL Format</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#11-简悦"><span class="toc-number">11.</span> <span class="toc-text">11.简悦</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#12-Visual-Inspector-By-CanvasFlip"><span class="toc-number">12.</span> <span class="toc-text">12.Visual Inspector By CanvasFlip</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#13-ShowIp"><span class="toc-number">13.</span> <span class="toc-text">13.ShowIp</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#14-tampermonkey"><span class="toc-number">14.</span> <span class="toc-text">14.tampermonkey</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#15-Google-翻译"><span class="toc-number">15.</span> <span class="toc-text">15.Google 翻译</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#参考"><span class="toc-number">1.</span> <span class="toc-text">参考</span></a></li></ol>
                 </div>
             
-            <p>今天推荐一波Chrome插件干货。这些插件带给我开发效率上的提升。所以在这里整理一下，分享给朋友们。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7253165-2b24e88e3eadbe7d?imageMogr2/auto-orient/strip" alt></p>
-<p>作为一名程序开发者，推荐一波常用的chrome插件，用了就舍不得丢，包括免费翻墙工具，github便捷代码浏览，截图，广告拦截，SQL格式化等等。</p>
-<blockquote>
-<p>1.谷歌访问助手<br>2.SourceGraph<br>3.The Great Suspender<br>4.Adblock<br>5.JSONView<br>6.二维码生成<br>7.掘金<br>8.Octotree<br>9.Scrn.li<br>10.SQL Format<br>11.简悦<br>12.Visual Inspector By CanvasFlip<br>13.ShowIp<br>14.tampermonkey<br>15.Google 翻译<br><a id="more"></a></p>
+            <blockquote>
+<p>序言：阅读JDK源码应该从何开始，有计划，有步骤的深入学习呢？</p>
 </blockquote>
-<h2 id="1-谷歌访问助手"><a href="#1-谷歌访问助手" class="headerlink" title="1.谷歌访问助手"></a>1.谷歌访问助手</h2><hr>
-<p>这是一款免费翻墙插件，轻松访问谷歌搜索，谷歌应用商店。一些不想花钱的，可以用一下。我自从装上以后，就深深的爱上它了。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-3840efa69314230f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<p>把谷歌访问助手安装好以后，那么就可以直接访问chrome网上应用店，去下载下面那些插件使用，再也不用去百度上花时间苦苦找寻。</p>
-<h2 id="2-SourceGraph"><a href="#2-SourceGraph" class="headerlink" title="2.SourceGraph"></a>2.SourceGraph</h2><hr>
-<p>Github一个不好的地方就是代码是不能互相跳转的，如果我只想浏览一下大致的代码结构，上下级目录来回的点击切换，所以阅读起来真心很累，所以迫不得已的时候，就只有clone下来，用idea打开。而这一款插件，就是来解决这个问题，它可以把在线阅读代码的体验提升一个量级，支持直接跳转，全局搜索以及显示注释说明，就跟ide一样。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7253165-c87f58b01cd4e98f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="3-The-Great-Suspender"><a href="#3-The-Great-Suspender" class="headerlink" title="3.The Great Suspender"></a>3.The Great Suspender</h2><hr>
-<p>Chrome浏览器很强大，基本上是开发者必备的，是世界上最流行的浏览器之一，但其最大的问题在于……</p>
-<p>我经常会开20个以上的标签页不关闭。习惯会去浏览这些网页，就像这样<br><img src="https://upload-images.jianshu.io/upload_images/7253165-33d5f678dc518d6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<p>再看看内存消耗，占用内存一个多G。也太吓人了。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-2f2fbcffb8ea13c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<p>没错，问题在于耗费内存太多。</p>
-<p>那么，这款插件可以自动休眠暂时不用的选项卡以节省内存的开支。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-61ba59d664e4a111.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="4-Adblock"><a href="#4-Adblock" class="headerlink" title="4.Adblock"></a>4.Adblock</h2><hr>
-<p>它屏蔽了几乎所有的烦人的弹出广告、Banner广告、图片广告等。直接带来的结果是：页面干净，加载速度变快、电量节省等。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-a25afe47a531a55d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="5-JSONView"><a href="#5-JSONView" class="headerlink" title="5.JSONView"></a>5.JSONView</h2><hr>
-<p>API接口一般都默认返回json格式，想要查看具体哪些内容的时候，chrome返回的数据都显示到一行，而且编码格式也不对，有了这个插件就不一样了，它会自动帮你排版，不管有多复杂，你都能很直观的了解到它的数据层级，简直开发者必备工具。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-0a8d8be48a025b4f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="6-二维码生成"><a href="#6-二维码生成" class="headerlink" title="6.二维码生成"></a>6.二维码生成</h2><hr>
-<p>开发的时候，需要将本地项目的地址生成一个二维码发给Boss去过目一下你的项目成果。那么我们经常会去把地址拷贝到一个在线二维码生成网站去生成，操作步骤繁琐。有了这款插件，只需要点击一次，就可以很方便的直接生成二维码。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-cb051fdbb0647817.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="7-掘金"><a href="#7-掘金" class="headerlink" title="7.掘金"></a>7.掘金</h2><hr>
-<p>时常会浏览一些开发类文章和优质github开源项目，也是蛮方便的。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-cd827619f4abd7cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="8-Octotree"><a href="#8-Octotree" class="headerlink" title="8.Octotree"></a>8.Octotree</h2><hr>
-<p>这款插件同样可以很方便地解决github代码不能跳转的痛点，如果只是想快速的浏览项目结构，那么这个插件还是很有用的，不过免费版的不支持代码搜索，只有付费版的才有。感觉没有SourceGraph功能的强大。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-f0a4d07841bf45eb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="9-Scrn-li"><a href="#9-Scrn-li" class="headerlink" title="9.Scrn.li"></a>9.Scrn.li</h2><hr>
-<p>这是一款截图工具插件，截完图可以直接编辑，超级方便。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-2af5980dd0bee569.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="10-SQL-Format"><a href="#10-SQL-Format" class="headerlink" title="10.SQL Format"></a>10.SQL Format</h2><hr>
-<p>平常在调试过程中，总会遇到一些SQL看起来很丑，这款插件可以解决SQL美化并格式化。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-8a2b65fa498a4d80.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="11-简悦"><a href="#11-简悦" class="headerlink" title="11.简悦"></a>11.简悦</h2><hr>
-<p>这是一款文章阅读美化神器，带来不一样的阅读体验。支持任意网页的自适应，可以把网页文章进行优美排版，能设置阅读背景，自动生成文章目录结构等。这个插件我真心推荐，好用到爆炸。</p>
-<p>不了解的可以去官网地址看看：<a href="http://ksria.com/simpread/" target="_blank" rel="noopener">http://ksria.com/simpread/</a></p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7253165-13c331d6821b6a4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="12-Visual-Inspector-By-CanvasFlip"><a href="#12-Visual-Inspector-By-CanvasFlip" class="headerlink" title="12.Visual Inspector By CanvasFlip"></a>12.Visual Inspector By CanvasFlip</h2><hr>
-<p>Visual Inspector 是 Chrome 的一个扩展，它可以方便的查看页面的字体、颜色、盒子模型、及元素间的间距标注等等，全是视觉化展示，这比代码展示形式的F12工具更易观看，是网页设计师必备辅助工具之一。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-8139eaa19fa804da.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="13-ShowIp"><a href="#13-ShowIp" class="headerlink" title="13.ShowIp"></a>13.ShowIp</h2><hr>
-<p>这个插件可以显示目前IP地址，在平时开发的时候， 就可以很方便的查看到IP地址。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-02f0dbf9cfc18cf8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="14-tampermonkey"><a href="#14-tampermonkey" class="headerlink" title="14.tampermonkey"></a>14.tampermonkey</h2><hr>
-<p>Tampermonkey「油猴」是一款免费的浏览器扩展和最为流行的用户脚本管理器。</p>
-<p>「油猴」也可以通过安装各类脚本对网站进行定制。不过它能定制的不仅仅是网站的样式，还能实现更多更强大的功能，例如：</p>
-<ul>
-<li>直接下载百度网盘文件</li>
-<li>重新定制繁杂的微博页面</li>
-<li>去掉视频播放广告<br>等等</li>
-</ul>
-<p>安装一个脚本就可以直接搞定。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-3264cb5247c3d09b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<h2 id="15-Google-翻译"><a href="#15-Google-翻译" class="headerlink" title="15.Google 翻译"></a>15.Google 翻译</h2><hr>
-<p>对于英语差的同学，那么这款翻译插件就蛮适合的。比如我就经常用。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-0f4fb97aa07ef9c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
-<hr>
-<p>以上就是我使用后，觉得比较好的一些插件。</p>
-<p>有不明白的，或者不清楚使用方法的，可以<strong>微信关注“Java技术干货”，后台回复我</strong>，可以一起学习交流。<br><img src="https://upload-images.jianshu.io/upload_images/7253165-1fcc6b3819cd2e3a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<p>下面就分享一篇比较好的学习源码顺序的文章，给了我们再阅读源码时，一个指导性的标志，而不会迷失方向。</p>
+<p>很多java开发的小伙伴都会阅读jdk源码，然而确不知道应该从哪读起。有些零零散散的学习，知识与知识之间没有相互联系起来，不成知识体系。以下为小编整理的通常所需阅读的源码范围。<br>标题为包名，后面序号为优先级1-4，优先级递减</p>
+<p>1、java.lang<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1) Object 1</span><br><span class="line">2) String 1</span><br><span class="line">3) AbstractStringBuilder 1</span><br><span class="line">4) StringBuffer 1</span><br><span class="line">5) StringBuilder 1</span><br><span class="line">6) Boolean 2</span><br><span class="line">7) Byte 2</span><br><span class="line">8) Double 2</span><br><span class="line">9) Float 2</span><br><span class="line">10) Integer 2</span><br><span class="line">11) Long 2</span><br><span class="line">12) Short 2</span><br><span class="line">13) Thread 2</span><br><span class="line">14) ThreadLocal 2</span><br><span class="line">15) Enum 3</span><br><span class="line">16) Throwable 3</span><br><span class="line">17) Error 3</span><br><span class="line">18) Exception 3</span><br><span class="line">19) Class 4</span><br><span class="line">20) ClassLoader 4</span><br><span class="line">21) Compiler 4</span><br><span class="line">22) System 4</span><br><span class="line">23) Package 4</span><br><span class="line">24) Void 4</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>2、java.util<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">1) AbstractList 1</span><br><span class="line">2) AbstractMap 1</span><br><span class="line">3) AbstractSet 1</span><br><span class="line">4) ArrayList 1</span><br><span class="line">5) LinkedList 1</span><br><span class="line">6) HashMap 1</span><br><span class="line">7) Hashtable 1</span><br><span class="line">8) HashSet 1</span><br><span class="line">9) LinkedHashMap 1</span><br><span class="line">10) LinkedHashSet 1</span><br><span class="line">11) TreeMap 1</span><br><span class="line">12) TreeSet 1</span><br><span class="line">13) Vector 2</span><br><span class="line">14) Queue 2</span><br><span class="line">15) Stack 2</span><br><span class="line">16) SortedMap 2</span><br><span class="line">17) SortedSet 2</span><br><span class="line">18) Collections 3</span><br><span class="line">19) Arrays 3</span><br><span class="line">20) Comparator 3</span><br><span class="line">21) Iterator 3</span><br><span class="line">22) Base64 4</span><br><span class="line">23) Date 4</span><br><span class="line">24) EventListener 4</span><br><span class="line">25) Random 4</span><br><span class="line">26) SubList 4</span><br><span class="line">27) Timer 4</span><br><span class="line">28) UUID 4</span><br><span class="line">29) WeakHashMap 4</span><br></pre></td></tr></table></figure></p>
+<p>3、java.util.concurrent<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1) ConcurrentHashMap 1</span><br><span class="line">2) Executor 2</span><br><span class="line">3) AbstractExecutorService 2</span><br><span class="line">4) ExecutorService 2</span><br><span class="line">5) ThreadPoolExecutor 2</span><br><span class="line">6) BlockingQueue 2</span><br><span class="line">7）AbstractQueuedSynchronizer 2</span><br><span class="line">8）CountDownLatch 2</span><br><span class="line">9) FutureTask 2</span><br><span class="line">10）Semaphore 2</span><br><span class="line">11）CyclicBarrier 2</span><br><span class="line">13）CopyOnWriteArrayList 3</span><br><span class="line">14）SynchronousQueue 3</span><br><span class="line">15）BlockingDeque 3</span><br><span class="line">16) Callable 4</span><br></pre></td></tr></table></figure></p>
+<p>4、java.util.concurrent.atomic<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1) AtomicBoolean 2</span><br><span class="line">2) AtomicInteger 2</span><br><span class="line">3) AtomicLong 2</span><br><span class="line">4) AtomicReference 3</span><br></pre></td></tr></table></figure></p>
+<p>5、java.lang.reflect<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1) Field 2</span><br><span class="line">2) Method 2</span><br></pre></td></tr></table></figure></p>
+<p>6、java.lang.annotation<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1) Annotation 3</span><br><span class="line">2) Target 3</span><br><span class="line">3) Inherited 3</span><br><span class="line">4) Retention 3</span><br><span class="line">5) Documented 4</span><br><span class="line">6) ElementType 4</span><br><span class="line">7) Native 4</span><br><span class="line">8) Repeatable 4</span><br></pre></td></tr></table></figure></p>
+<p>7、java.util.concurrent.locks<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1) Lock 2</span><br><span class="line">2) Condition 2</span><br><span class="line">3) ReentrantLock 2</span><br><span class="line">4) ReentrantReadWriteLock 2</span><br></pre></td></tr></table></figure></p>
+<p>8、java.io<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1) File 3</span><br><span class="line">2) InputStream   3</span><br><span class="line">3) OutputStream  3</span><br><span class="line">4) Reader  4</span><br><span class="line">5) Writer  4</span><br></pre></td></tr></table></figure></p>
+<p>9、java.nio<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1) Buffer 3</span><br><span class="line">2) ByteBuffer 4</span><br><span class="line">3) CharBuffer 4</span><br><span class="line">4) DoubleBuffer 4</span><br><span class="line">5) FloatBuffer 4</span><br><span class="line">6) IntBuffer 4</span><br><span class="line">7) LongBuffer 4</span><br><span class="line">8) ShortBuffer 4</span><br></pre></td></tr></table></figure></p>
+<p>10、java.sql<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1) Connection 3</span><br><span class="line">2) Driver 3</span><br><span class="line">3) DriverManager 3</span><br><span class="line">4) JDBCType 3</span><br><span class="line">5) ResultSet 4</span><br><span class="line">6) Statement 4</span><br></pre></td></tr></table></figure></p>
+<p>11、java.net<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1) Socket 3</span><br><span class="line">2) ServerSocket 3</span><br><span class="line">3) URI 4</span><br><span class="line">4) URL 4</span><br><span class="line">5) URLEncoder 4</span><br></pre></td></tr></table></figure></p>
+<p>然后一步一步地学习下去，必有大成。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq_21033663/article/details/79571506" target="_blank" rel="noopener">https://blog.csdn.net/qq_21033663/article/details/79571506</a></p>
+<p>喜欢的朋友们， 记得微信关注或点个喜欢额~</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/7253165-5cd44c9bf04084bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
 
         
         
@@ -330,7 +279,7 @@
         <footer class="article-footer">
             <div class="col-sm-10">
                 <div>
-                    <b>本文链接</b>：<a href="/2019/07/29/15-chrome-plugins/">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
+                    <b>本文链接</b>：<a href="/2019/08/07/jdk1-8-source-analysis-02/">JDK1.8源码分析02之阅读源码顺序</a>
                 </div>
                 <div>
                     
@@ -348,7 +297,7 @@
 
 </div>
 
-    <a data-url="http://www.raysonblog.cn/2019/07/29/15-chrome-plugins/" data-id="cjz0zgs4d0008ywstmpa7lhn4" class="article-share-link"><i class="fa fa-share"></i>Bagikan</a>
+    <a data-url="http://www.raysonblog.cn/2019/08/07/jdk1-8-source-analysis-02/" data-id="cjz0zgs400000ywstc8gf9gz0" class="article-share-link"><i class="fa fa-share"></i>Bagikan</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -425,21 +374,21 @@
         
 <nav id="article-nav">
     
-        <a href="/2019/08/06/jdk1-8-source-analysis-01/" id="article-nav-newer" class="btn btn-default article-nav-link-wrap" title="JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）">
+        <a href="/2019/08/07/jdk1-8-source-analysis-03/" id="article-nav-newer" class="btn btn-default article-nav-link-wrap" title="JDK1.8源码分析03之idea搭建源码阅读环境">
             <strong class="article-nav-caption hidden-lg">上一篇</strong>
             <i class="fa fa-angle-left fa-fw"></i>
             <span class="article-nav-title">
                 
-                    JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）
+                    JDK1.8源码分析03之idea搭建源码阅读环境
                 
             </span>
 
         </a>
     
     
-        <a href="/2019/07/18/springboot-01-helloworld/" id="article-nav-older" class="btn btn-default article-nav-link-wrap" title="springboot零基础进阶实战教程系列">
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/" id="article-nav-older" class="btn btn-default article-nav-link-wrap" title="JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）">
             <strong class="article-nav-caption hidden-lg">下一篇</strong>
-            <span class="article-nav-title">springboot零基础进阶实战教程系列</span>
+            <span class="article-nav-title">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</span>
             <i class="fa fa-angle-right fa-fw"></i>
         </a>
     
@@ -463,7 +412,7 @@
             repo: 'blog-comments',
             owner: 'raysonfang',
             admin: ['raysonfang'],
-            id: 'Mon Jul 29 2019 14:27:43 GMT+0800',      // Ensure uniqueness and length less than 50
+            id: 'Wed Aug 07 2019 16:16:22 GMT+0800',      // Ensure uniqueness and length less than 50
             distractionFreeMode: false  // Facebook-like distraction free mode
         })
 
