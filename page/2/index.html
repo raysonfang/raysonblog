@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="baidu-site-verification" content="qd1f9n0kEk">
+    <meta name="google-site-verification" content="Gwh2EnLnIMkr6D-Uyzrgm3qN7zFQgCZunuaz9lJJNxg">
+    <link rel="shortcut icon" href="/favicon-32.ico">
+    
+    <title>方子龙</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
+<meta name="keywords" content="方子龙,SpringBoot,SpringCloud,Java技术干货,程序猿,Golang">
+<meta property="og:type" content="website">
+<meta property="og:title" content="方子龙">
+<meta property="og:url" content="http://www.raysonblog.cn/page/2/index.html">
+<meta property="og:site_name" content="方子龙">
+<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="方子龙">
+<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
+    
+
+    
+        <link rel="alternate" href="/" title="方子龙" type="application/atom+xml">
+    
+
+    
+
+    <link rel="stylesheet" href="/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/open-sans/styles.css">
+    <link rel="stylesheet" href="/vendor/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/vendor/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="/vendor/baiduTemplate/plugin.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css">
+    
+    
+    
+    
+    
+
+
+
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            showProcessingMessages: false,
+            messageStyle: "none",
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX", "output/HTML-CSS"],
+            tex2jax: {
+                inlineMath:  [ ["$", "$"] ],
+                displayMath: [ ["$$","$$"] ],
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre','code','a'],
+                ignoreClass:"comment-content"
+            },
+            "HTML-CSS": {
+                availableFonts: ["STIX","TeX"],
+                showMathMenu: false
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    </script>
+    <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">方子龙</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/books">书单</a>
+                
+                    <a class="main-nav-link" href="/monthplan">月度计划</a>
+                
+                    <a class="main-nav-link" href="/wx-editor/markdown">markdown转微信</a>
+                
+                    <a class="main-nav-link" href="/about">关于我</a>
+                
+<!--                <a class="main-nav-link" href="#" style="color:red">目前博客还在完善中...</a>-->
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Entradas',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categorias',
+            TAGS: 'Etiquetas',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/books">书单</a></td>
+                
+                    <td><a class="main-nav-link" href="/monthplan">月度计划</a></td>
+                
+                    <td><a class="main-nav-link" href="/wx-editor/markdown">markdown转微信</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于我</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="Buscar" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer row">
+            
+            <section id="main" class="col-lg-9"><style>
+    .row {
+        margin-top: 15px;
+    }
+
+    .index-card {
+        padding: 15px;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .index-card-head {
+        font-size: 1.3em;
+        font-weight: 700;
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #eceff2;
+        /*color: #009688;*/
+        color: #00b8a9;
+    }
+
+    .index-card-body {
+
+    }
+
+    .index-card-body-list {
+        display: block;
+        margin-bottom: 7px;
+        justify-content: space-between;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .index-card-body-list a {
+        color: grey;
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .index-card-body-list a:hover {
+        color: dodgerblue;
+    }
+
+    /*.index-card-footer {*/
+    /*font-size: 0.85em;*/
+    /*line-height: 1.6em;*/
+    /*border-top: 1px solid #eceff2;*/
+    /*padding-top: 5px;*/
+    /*margin-top: 20px;*/
+    /*}*/
+</style>
+
+<!-- 第一行展示轮播 -->
+<!--<div class="row">-->
+<!--    <style>-->
+
+<!--        .banner {-->
+<!--            /*height: 410px;*/-->
+<!--            height: 200px;-->
+<!--            width: 100%;-->
+<!--            position: relative;-->
+<!--            overflow: hidden;-->
+<!--        }-->
+<!--        .banner ul{-->
+<!--            padding: 0;-->
+<!--            margin: 0;-->
+<!--        }-->
+<!--        .banner ul li{-->
+<!--            top: 0;-->
+<!--            left: 0;-->
+<!--            list-style: none;-->
+<!--            position: absolute;-->
+<!--        }-->
+<!--        .banner ul li img{-->
+<!--            /*height: 410px;*/-->
+<!--            /*height: 200px;*/-->
+<!--            width: 100%;-->
+<!--            height: auto;-->
+<!--            display: block;-->
+<!--        }-->
+<!--        .ban-btn{-->
+<!--            width: 100%;-->
+<!--            position: absolute;-->
+<!--            /*top: 136px;*/-->
+<!--            top: 70px;-->
+<!--            z-index: 2;-->
+<!--        }-->
+<!--        .ban-btn a{-->
+<!--            display: inline-block;-->
+<!--            height: 60px;-->
+<!--            width: 35px;-->
+<!--            background: rgba(180,180,180,0.5);-->
+<!--            font-size: 25px;-->
+<!--            text-align: center;-->
+<!--            line-height: 60px;-->
+<!--            color: #fff;-->
+<!--            text-decoration: none;-->
+<!--        }-->
+<!--        .next-btn{-->
+<!--            float: right;-->
+<!--        }-->
+<!--        .prev-btn{-->
+<!--            float: left;-->
+<!--        }-->
+<!--        .ban-btn a:hover{-->
+<!--            background: rgba(100,100,100,0.5);-->
+<!--        }-->
+<!--        .indicator{-->
+<!--            width: 100%;-->
+<!--            position: absolute;-->
+<!--            text-align: center;-->
+<!--            bottom: 15px;-->
+<!--            z-index: 2;-->
+<!--        }-->
+<!--        .indicator a{-->
+<!--            display: inline-block;-->
+<!--            width: 20px;-->
+<!--            height: 5px;-->
+<!--            margin:0 3px;-->
+<!--            background: #fff;-->
+<!--        }-->
+<!--        .indicator-active{-->
+<!--            background: #FF8C00!important;-->
+<!--        }-->
+<!--    </style>-->
+
+<!--    <div class="banner" id="J_bg_ban">-->
+<!--        <ul>-->
+<!--            &lt;!&ndash;QCon & AS&ndash;&gt;-->
+<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
+<!--                <a href="https://sz2019.archsummit.com/track?utm_source=blog&utm_campaign=8&utm_medium=cxydd&utm_content=banner" target="_blank"><img src="/assets/banner/portrait-of-wild-bird.jpg" alt=""></a>-->
+<!--            </li>-->
+<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
+<!--                <a href="http://www.lubanjava.com/luban/index.html?=CXYDD" target="_blank"><img src="/assets/banner/食品banner.jpg" alt=""></a>-->
+<!--            </li>-->
+<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
+<!--                <a href="http://gk.link/a/103uO" target="_blank"><img src="/assets/geektime/banner_openrestry.jpg" alt=""></a>-->
+<!--            </li>-->
+<!--            &lt;!&ndash;<li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">&ndash;&gt;-->
+<!--            &lt;!&ndash;<p>扫描右侧二维码关注支持我，顺便推荐给你的朋友吧</p>&ndash;&gt;-->
+<!--            &lt;!&ndash;</li>&ndash;&gt;-->
+<!--            &lt;!&ndash;<li><a href="#"><img src="https://zsqosos.github.io/img/banner_02.jpg" alt=""/></a></li>&ndash;&gt;-->
+<!--            &lt;!&ndash;<li><a href="#"><img src="https://zsqosos.github.io/img/banner_03.jpg" alt=""/></a></li>&ndash;&gt;-->
+<!--        </ul>-->
+<!--        <div class="indicator" id="J_bg_indicator"></div>-->
+<!--        <div class="ban-btn clearfloat" id="J_bg_btn">-->
+<!--            <a class="next-btn fr" href="javascript:">&gt;</a><a class="prev-btn fl" href="javascript:">&lt;</a>-->
+<!--        </div>-->
+
+<!--    </div>-->
+
+<!--    <script type="text/javascript">-->
+<!--        $.carousel = {-->
+<!--            now : 0,                    //当前显示的图片索引-->
+<!--            hasStarted : false,         //是否开始轮播-->
+<!--            interval : null,            //定时器-->
+<!--            liItems : null,             //要轮播的li元素集合-->
+<!--            len : 0,                    //liItems的长度-->
+<!--            aBox : null,                //包含指示器的dom对象-->
+<!--            bBox : null,                //包含前后按钮的dom对象-->
+
+<!--            /**-->
+<!--             * 初始化及控制函数-->
+<!--             * @param bannnerBox string 包含整个轮播图盒子的id或class-->
+<!--             * @param aBox  string 包含指示器的盒子的id或class-->
+<!--             * @param btnBox string 包含前后按钮的盒子的id或class-->
+<!--             */-->
+<!--            startPlay : function(bannnerBox,aBox,btnBox) {-->
+<!--                //初始化对象参数-->
+<!--                var that = this;-->
+<!--                this.liItems = $(bannnerBox).find('ul').find('li');-->
+<!--                this.len = this.liItems.length;-->
+<!--                this.aBox = $(bannnerBox).find(aBox);-->
+<!--                this.bBox = $(bannnerBox).find(btnBox);-->
+<!--                //让第一张图片显示，根据轮播图数量动态创建指示器，并让第一个指示器处于激活状态，隐藏前后按钮-->
+<!--                this.liItems.first('li').css({'opacity': 1, 'z-index': 1}).siblings('li').css({'opacity': 0, 'z-index': 0});-->
+<!--                var aDom = '';-->
+<!--                for (var i = 0; i < this.len; i++){-->
+<!--                    aDom += '<a></a>';-->
+<!--                }-->
+<!--                $(aDom).appendTo(this.aBox);-->
+<!--                this.aBox.find('a:first').addClass("indicator-active");-->
+<!--                this.bBox.hide();-->
+<!--                //鼠标移入banner图时，停止轮播并显示前后按钮，移出时开始轮播并隐藏前后按钮-->
+<!--                $(bannnerBox).hover(function (){-->
+<!--                    that.stop();-->
+<!--                    that.bBox.fadeIn(200);-->
+<!--                }, function (){-->
+<!--                    that.start();-->
+<!--                    that.bBox.fadeOut(200);-->
+<!--                });-->
+<!--                //鼠标移入指示器时，显示对应图片，移出时继续播放-->
+<!--                this.aBox.find('a').hover(function (){-->
+<!--                    that.stop();-->
+<!--                    var out = that.aBox.find('a').filter('.indicator-active').index();-->
+<!--                    that.now = $(this).index();-->
+<!--                    if(out!=that.now) {-->
+<!--                        that.play(out, that.now)-->
+<!--                    }-->
+<!--                }, function (){-->
+<!--                    that.start();-->
+<!--                });-->
+<!--                //点击左右按钮时显示上一张或下一张-->
+<!--                $(btnBox).find('a:first').click(function(){that.next()});-->
+<!--                $(btnBox).find('a:last').click(function(){that.prev()});-->
+<!--                //开始轮播-->
+<!--                this.start()-->
+<!--            },-->
+<!--            //前一张函数-->
+<!--            prev : function (){-->
+<!--                var out = this.now;-->
+<!--                this.now = (&#45;&#45;this.now + this.len) % this.len;-->
+<!--                this.play(out, this.now);-->
+<!--            },-->
+<!--            //后一张函数-->
+<!--            next : function (){-->
+<!--                var out = this.now;-->
+<!--                this.now = ++this.now % this.len;-->
+<!--                this.play(out, this.now);-->
+<!--            },-->
+<!--            /**-->
+<!--             * 播放函数-->
+<!--             * @param out number 要消失的图片的索引值-->
+<!--             * @param now number 接下来要轮播的图的索引值-->
+<!--             */-->
+<!--            play : function (out, now){-->
+<!--                this.liItems.eq(out).stop().animate({opacity:0,'z-index':0},500).end().eq(now).stop().animate({opacity:1,'z-index':1},500);-->
+<!--                this.aBox.find('a').removeClass('indicator-active').eq(now).addClass('indicator-active');-->
+<!--            },-->
+<!--            //开始函数-->
+<!--            start : function(){-->
+<!--                if(!this.hasStarted) {-->
+<!--                    this.hasStarted = true;-->
+<!--                    var that = this;-->
+<!--                    this.interval = setInterval(function(){-->
+<!--                        that.next();-->
+<!--                    },2000);-->
+<!--                }-->
+<!--            },-->
+<!--            //停止函数-->
+<!--            stop : function (){-->
+<!--                clearInterval(this.interval);-->
+<!--                this.hasStarted = false;-->
+<!--            }-->
+<!--        };-->
+
+<!--        $(function(){-->
+<!--            $.carousel.startPlay('#J_bg_ban','#J_bg_indicator','#J_bg_btn');-->
+<!--        })-->
+<!--    </script>-->
+<!--</div>-->
+<!--<style type="text/css">
+    /*border-bottom: 1px solid #F0F0F0;*/
+    .huadong {width: 60rem;height:4rem;padding: 0.5rem 0 0.3rem 0; border-bottom: 1px solid #F0F0F0; position:relative;font: 12px/1.5 "Hiragino Sans GB","Microsoft YaHei",simsun;margin:0 auto;}
+    .huadong .huabox {  margin:0 auto; width: 80%; line-height: 4rem;}
+    .huadong .hdimg {float:left;line-height:3.5rem;}
+    .huadong .hdimg img { width: 100%; vertical-align:middle;}
+    .huadong h5 {font-size:1rem;float:left; line-height: 2.2rem; margin: 0.8rem 0 0 0; }
+    .huadong .gg_more { float: left;}
+    .huadong .gg_more a { font-size: 0.8rem; text-decoration:none;}
+
+    .huadong .notice_active {
+        float: left;
+        width: 55%;
+        height: 4rem;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+    }
+    .huadong .notice_active li{list-style-type:none;line-height: 2.4rem;overflow: hidden;}
+    /*.huadong .notice_active li.notice_active_ch {}*/
+    .huadong .notice_active li.notice_active_ch span {color:#656972;font-size:1rem;display: block;overflow: hidden; width:80%;float: left;
+        overflow: hidden;margin:0 0 2rem 0;}
+    .huadong .gg_more .news_ck {
+        float: left;
+        margin: 0 1rem 0 1rem;
+        color: #888;
+        width: 5rem;
+        height: 2rem;
+        line-height: 2rem;
+        display: block;
+        border: 1px solid #656972;
+        text-align: center;
+        border-radius: 0.7rem;
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+    .huadong .gg_more .news_more {
+
+    }
+    .huadong .notice_active li.notice_active_ch em {text-align:right;float:right;color:#888;font-size:0.8rem;font-style:normal;  }
+</style>
+<script type="text/javascript">
+    function timer(opj){
+        $(opj).find('ul').animate({
+            marginTop : "-3.5rem"
+        },500,function(){
+            $(this).css({marginTop : "0.7rem"}).find("li:first").appendTo(this);
+        })
+    }
+    $(function(){
+        var num = $('.notice_active').find('li').length;
+        if(num > 1){
+            var time=setInterval('timer(".notice_active")',3500);
+            $('.gg_more a').mousemove(function(){
+                clearInterval(time);
+            }).mouseout(function(){
+                time = setInterval('timer(".notice_active")',3500);
+            });
+        }
+
+        $(".news_ck").click(function(){
+            location.href = $(".notice_active .notice_active_ch").children(":input").val();
+        })
+    });
+</script>
+<div class="huadong">
+    <div class="huabox">
+        <div class="hdimg"><img src="/assets/scroll/lingdang.png"></div>
+        <h5>【公告】</h5>
+        <div class="notice_active">
+            <ul>
+                <li class="notice_active_ch">
+                    <span>滑动轮播1a去哦我我iwoi我i滑动轮播3滑</span>
+
+                    <em>2017-01-20</em>
+                </li>
+                <li class="notice_active_ch">
+                    <span>滑动轮播2滑动轮播3</span>
+
+                    <em>2017-01-20</em>
+                </li>
+                <li class="notice_active_ch">
+                    <span>站长素材文字滚动播放</span>
+
+                    <em>2017-01-20</em>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="gg_more">
+            <a class="news_ck" href="javascript:void(0)">查看详情</a>
+            <a title="news_more" href="#">更多+</a>
+        </div>
+    </div>
+</div>-->
+<!-- 第二行展示推荐阅读和最新发布内容卡片 -->
+<div class="row">
+    <div class="col-md-6">
+       
+    
+
+    
+    <div class="index-card">
+        <div class="index-card-head">
+            <h3>推荐阅读</h3>
+        </div>
+        <div class="index-card-body">
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
+        <a href="/2019/07/29/15-chrome-plugins/" target="_blank" itemprop="url">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/03</span>
+        <a href="/2019/07/03/excel-vba-join/" target="_blank" itemprop="url">用VBA处理Excel, 合并两个Excel文件</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
+        <a href="/2019/08/07/jdk1-8-source-analysis-02/" target="_blank" itemprop="url">JDK1.8源码分析02之阅读源码顺序</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
+        <a href="/2019/08/07/jdk1-8-source-analysis-03/" target="_blank" itemprop="url">JDK1.8源码分析03之idea搭建源码阅读环境</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/06/27</span>
+        <a href="/2019/06/27/my-first-blog/" target="_blank" itemprop="url">我的个人博客搭建之旅</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/18</span>
+        <a href="/2019/07/18/springboot-01-helloworld/" target="_blank" itemprop="url">springboot零基础进阶实战教程系列</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/01</span>
+        <a href="/2019/07/01/summary-of-common-sql/" target="_blank" itemprop="url">常用SQL总结</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/10/10</span>
+        <a href="/2019/10/10/spring-boot-dubbo-nacos-demo/" target="_blank" itemprop="url">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
+</div>
+            
+        </div>
+        <div class="index-card-footer" style="text-align: right;">
+            <a href="/archives">查看更多</a>
+        </div>
+    </div>
+        
+
+    </div>
+    <div class="col-md-6">
+        
+    <div class="index-card">
+        <div class="index-card-head">
+            <h3>最新发布</h3>
+        </div>
+        <div class="index-card-body">
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/10/10</span>
+        <a href="/2019/10/10/spring-boot-dubbo-nacos-demo/" target="_blank" itemprop="url">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
+        <a href="/2019/08/07/jdk1-8-source-analysis-03/" target="_blank" itemprop="url">JDK1.8源码分析03之idea搭建源码阅读环境</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
+        <a href="/2019/08/07/jdk1-8-source-analysis-02/" target="_blank" itemprop="url">JDK1.8源码分析02之阅读源码顺序</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
+        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
+        <a href="/2019/07/29/15-chrome-plugins/" target="_blank" itemprop="url">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/18</span>
+        <a href="/2019/07/18/springboot-01-helloworld/" target="_blank" itemprop="url">springboot零基础进阶实战教程系列</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
+        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/03</span>
+        <a href="/2019/07/03/excel-vba-join/" target="_blank" itemprop="url">用VBA处理Excel, 合并两个Excel文件</a>
+</div>
+            
+                <div class="index-card-body-list">
+        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/01</span>
+        <a href="/2019/07/01/summary-of-common-sql/" target="_blank" itemprop="url">常用SQL总结</a>
+</div>
+            
+        </div>
+        <div class="index-card-footer" style="text-align: right;">
+            <a href="/archives">查看更多</a>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+<nav id="page-nav">
+    <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+</nav>
+
+
+    <article id="post-my-first-blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2019/06/27/my-first-blog/">我的个人博客搭建之旅</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div>
+        <span class="label label-success" style="font-size: 14px">原创</span>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2019/06/27/my-first-blog/">
+            <time datetime="2019-06-27T08:50:32.000Z" itemprop="datePublished">2019-06-27</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-author">
+        <i class="fa fa-user"></i>
+        <a href="/2019/06/27/my-first-blog/">
+            方子龙
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/杂谈/">杂谈</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/杂谈/个人感想/">个人感想</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/杂谈/">杂谈</a>
+    </div>
+
+                        
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><p><code>为期一个月的个人博客搭建，到现在也基本上有一个像样的雏形，总体上来说还是比较满意。所以准备写一下搭建博客过程的感受。</code></p>
+<h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>从2017年到现在，总共有两次用Hexo来搭建个人博客。<br>访问<a href="http://www.raysonblog.cn/">方子龙的博客</a>:<a href="http://www.raysonblog.cn/">http://www.raysonblog.cn/</a></p>
+<ul>
+<li><p>第一次：<br>  在2017年的时候，开始想着用Java干它一个属于自己的博客，当然不是马上就开始干，得网上查找资料啊！看看是否有现成的能够直接使用。在此过程中，发现有很多的博客主题都基本上一致，而且还比较好看, 效果杠杠地。为了满足好奇心，就看到网站下方有关于<code>Hexo</code>的字样，就点进去看到了一下简介，而且还有很多好看的主题，还可以随意配置自己喜欢的主题。顿时我就打消了要自己写博客程序的念头。有这么好用的，当然是直接拿来即用。就这样，一边搭建一边学习也就有了Hexo+Next主题的第一版博客。</p>
+<p>  遗憾的是，搭建成功以后，也没有去管理，任它荒废。</p></li></ul></p>
+            <p class="article-more-link" style="text-align: center">
+                <a href="/2019/06/27/my-first-blog/">阅读更多</a>
+            </p>
+        
+        
+        </div>
+        
+    </div>
+    
+</article>
+
+    
+
+    <nav id="page-nav">
+        <a class="extend prev" rel="prev" href="/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+</section>
+            
+                <aside id="sidebar" class="col-lg-3">
+                    
+    
+
+<style>
+    .bg-danger {
+        /*background-color: #009688;*/
+        /*background-color: #00adb5;*/
+        background-color: #00b8a9;
+        padding: 15px;
+        margin: 0px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-block {
+        padding: 10px 0px 30px 20px;
+        margin-top: 10px;
+        border-top: 1px solid #eceff2;
+    }
+
+    .tooltip {
+        opacity: 1;
+    }
+
+    .widget-panel {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    }
+
+    .media-body p {
+        font-size: 13px;
+        color: grey;
+    }
+    .widget-zt .row {
+        margin-top: 15px;
+    }
+</style>
+<div class="widget-wrap">
+    <div class="widget bg-danger" style="color:whitesmoke;">
+        <div class="card-front animated col s12 m12 l8 offset-l2 fadeInUp">
+            <div class="row" style="margin-top: 0px">
+                <div class="col-md-12">
+                    <img class="adv" style="width: 100%;" src="/assets/barcode/java_wx.jpg">
+                </div>
+                <div class="col-md-12" style="text-align: center;padding-left: 5px;">
+                    <h2 style="font-size: 18px;margin-bottom: 12px;">关注公众号</h2>
+                    <small style="font-size: 0.8em;">
+                        →「技术干货」每日推送<br>
+                        →「免费资料」随时领取<br>
+                    </small>
+                </div>
+            </div>
+        </div>
+<!--        <div style="font-size: 0.8em;">-->
+<!--            添加我的微信：<span style="color: orange;font-weight: bold;">zyc_enjoy</span> 参与技术讨论群<br>-->
+<!--            除公众号以外，我还会在以下平台发布内容：-->
+<!--        </div>-->
+<!--        <div class="profile-block social-links">-->
+<!--            <table style="width: 100%;text-align: center;">-->
+<!--                <tr>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://github.com/dyc87112" target="_blank" title="GitHub" class="tooltip">-->
+<!--                            <img style="width: 22px;height: 22px;" src="/assets/icon/github.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="http://gitee.com/didispace" target="_blank" title="Gitee" class="tooltip">-->
+<!--                            <img style="width: 18px;" src="/assets/icon/gitee.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://www.zhihu.com/people/di-yong-chao-86/" target="_blank" title="知乎" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/zhihu.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://blog.csdn.net/dyc87112" target="_blank" title="CSDN" class="tooltip">-->
+<!--                            <img style="width: 18px;" src="/assets/icon/CSDN.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="https://www.jianshu.com/u/6a622d516e32" target="_blank" title="简书" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/JianShu.svg"></a>-->
+<!--                    </td>-->
+<!--                    <td><a style="color: whitesmoke;font-size: 25px;" href="http://weibo.com/2014605502" target="_blank" title="微博" class="tooltip">-->
+<!--                            <img style="width: 22px;" src="/assets/icon/weibo.svg"></a>-->
+<!--                    </td>-->
+<!--                </tr>-->
+<!--            </table>-->
+<!--        </div>-->
+    </div>
+</div>
+<div class="widget-wrap widget-panel widget-zt">
+    <h3 class="widget-title">专题</h3>
+    <div class="widget">
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 55px" src="/assets/spring-boot/icon-spring-boot.svg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Spring Boot
+                </a>
+                <p>史上超详细图文讲解教程</p>
+                <p>正在热更中...</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 55px;" src="/assets/other/高并发应用.svg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Java高并发
+                </a>
+                <p>趣学Java高并发</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 55px;" src="/assets/other/offer.svg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    💰直击Java面试
+                </a>
+                <p>精心整理，🗡剑指offer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <img style="width: 55px;" src="/assets/golang/golang.svg">
+            </div>
+            <div class="col-md-9">
+                <a href="#" style="font-size: 16px;font-weight: 700;color: #38b7ea;">
+                    趣学Golang
+                </a>
+                <p>兴趣所致, 寸草不生</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    <div class="widget-wrap widget-panel">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/">Excel</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Excel/VBA/">VBA</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/markdown/">markdown</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/SQL/">SQL</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Spring-Boot/">Spring Boot</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/">杂谈</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/杂谈/个人感想/">个人感想</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/源码分析/">源码分析</a><span class="category-list-count">3</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a><span class="category-list-count">3</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/精美工具/">精美工具</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+    <div class="widget-wrap widget-panel">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/SQL/" style="font-size: 10px;">SQL</a> <a href="/tags/Spring-Boot/" style="font-size: 20px;">Spring Boot</a> <a href="/tags/VBA/" style="font-size: 10px;">VBA</a> <a href="/tags/dubbo/" style="font-size: 10px;">dubbo</a> <a href="/tags/mathJax/" style="font-size: 10px;">mathJax</a> <a href="/tags/nacos/" style="font-size: 10px;">nacos</a> <a href="/tags/杂谈/" style="font-size: 10px;">杂谈</a> <a href="/tags/源码分析/" style="font-size: 20px;">源码分析</a> <a href="/tags/精美工具/" style="font-size: 10px;">精美工具</a>
+        </div>
+    </div>
+
+<div id="toTop" class="fa fa-angle-up"></div>
+                </aside>
+            
+        </div>
+        <footer id="footer">
+    <div class="container">
+    <div class="row" style="margin-top: 0px">
+        <dl class="col-sm-4">
+            <dd style="text-align: left">关于博客 |</dd>
+            <dd style="font-size: 14px;margin-top: 5px;">本博客致力于个人技术学习分享，以及转载分享优质技术文章</dd>
+            <dd style="text-align: left">我的平台 |</dd>
+            <dd style="font-size: 14px;margin-top: 5px;">
+                <div class="row hidden-xs">
+                    <div class="col-sm-4"><a href="https://www.jianshu.com/u/5b0de5c8dc56" target="_blank">简书</a></div>
+                    <div class="col-sm-4"><a href="https://www.cnblogs.com/werewolfBoy/" target="_blank">博客园</a></div>
+                    <div class="col-sm-4"><a href="https://blog.csdn.net/qq_33399709" target="_blank">CSDN</a></div>
+                </div>
+            </dd>
+        </dl>
+        <dl class="col-sm-4">
+            <dd><img style="width: 40%" src="/assets/barcode/java_barcode.jpg" /></dd>
+            <dd style="font-size: 14px;"><strong>*微信公众号*</strong></dd>
+            <dd style="font-size: 14px;"><strong>*为你推送最实用的Java技术干货*</strong></dd>
+        </dl>
+        <dl class="col-sm-4">
+            <dt style="text-align: left">友链 |</dt>
+            <dd style="font-size: 14px;margin-top: 5px;"><a href="/about">申请友链</a></dd>
+        </dl>
+    </div>
+    </div>
+    <div class="outer" style="margin-top: 20px;">
+        <div id="footer-info" class="inner">
+            &copy; 2019 方子龙 版权所有
+            浏览量:
+            <strong id="busuanzi_value_site_pv">
+                <i class="fa fa-spinner fa-spin"></i>
+            </strong>
+            总访客:
+            <strong id="busuanzi_value_site_uv">
+                <i class="fa fa-spinner fa-spin"></i>
+            </strong> 人<br>
+        </div>
+    </div>
+</footer>
+        
+
+    
+        <script src="/vendor/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-share.min.js"></script>
+        <script src="/vendor/lightgallery/js/lg-video.min.js"></script>
+    
+    
+
+
+
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

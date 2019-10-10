@@ -6,19 +6,37 @@
     <meta name="google-site-verification" content="Gwh2EnLnIMkr6D-Uyzrgm3qN7zFQgCZunuaz9lJJNxg">
     <link rel="shortcut icon" href="/favicon-32.ico">
     
-    <title>方子龙</title>
+    <title>Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩 | 方子龙</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
-<meta name="keywords" content="方子龙,SpringBoot,SpringCloud,Java技术干货,程序猿,Golang">
-<meta property="og:type" content="website">
-<meta property="og:title" content="方子龙">
-<meta property="og:url" content="http://www.raysonblog.cn/index.html">
+    <meta name="description" content="1���������Ľ�������λ���Spring Boot 2.x�İ汾��ͨ��Nacos��Ϊ������ע�����ģ�ʵ��Dubbo�����ע�������ѡ� ��������İ汾˵����  Spring Boot 2.1.9 Dubbo 2.7.3 Nacos 1.1.3  ���ĵ����㣺  1.����yml��ʽ����dubbo�����á� 2.������">
+<meta name="keywords" content="Spring Boot,dubbo,nacos">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩">
+<meta property="og:url" content="http://www.raysonblog.cn/2019/10/10/spring-boot-dubbo-nacos-demo/index.html">
 <meta property="og:site_name" content="方子龙">
-<meta property="og:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
+<meta property="og:description" content="1���������Ľ�������λ���Spring Boot 2.x�İ汾��ͨ��Nacos��Ϊ������ע�����ģ�ʵ��Dubbo�����ע�������ѡ� ��������İ汾˵����  Spring Boot 2.1.9 Dubbo 2.7.3 Nacos 1.1.3  ���ĵ����㣺  1.����yml��ʽ����dubbo�����á� 2.������">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-077b393fe4f0e2db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-839a252ccd2dd1b0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-0c1f4a84227a3905.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-b6a4aac580569d63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-7af386ac25bfdfaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-e7114a4e94be8074.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-c23be4d47feada66.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-a3c8d25e9f2c2680.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-888039c6921d3b7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-c6fc8f5773247914.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-eef3866099b5a1d8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-03fa2ac1bf81d221.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-b01fa24e6bb9522d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-e0894e862dbbe110.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-40f28b57fb658311.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/7253165-4a99cec9508f7c11.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-10-10T02:43:12.620Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="方子龙">
-<meta name="twitter:description" content="「方子龙」一天不码字就剁手的程序猿。专注Java、Golang、Spring Boot/Spring Cloud等技术交流分享。">
+<meta name="twitter:title" content="Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩">
+<meta name="twitter:description" content="1���������Ľ�������λ���Spring Boot 2.x�İ汾��ͨ��Nacos��Ϊ������ע�����ģ�ʵ��Dubbo�����ע�������ѡ� ��������İ汾˵����  Spring Boot 2.1.9 Dubbo 2.7.3 Nacos 1.1.3  ���ĵ����㣺  1.����yml��ʽ����dubbo�����á� 2.������">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/7253165-077b393fe4f0e2db.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
     
 
     
@@ -183,513 +201,15 @@
 
         <div class="outer row">
             
-            <section id="main" class="col-lg-9"><style>
-    .row {
-        margin-top: 15px;
-    }
-
-    .index-card {
-        padding: 15px;
-        background: #fff;
-        -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    }
-
-    .index-card-head {
-        font-size: 1.3em;
-        font-weight: 700;
-        margin-bottom: 15px;
-        padding-bottom: 5px;
-        border-bottom: 1px solid #eceff2;
-        /*color: #009688;*/
-        color: #00b8a9;
-    }
-
-    .index-card-body {
-
-    }
-
-    .index-card-body-list {
-        display: block;
-        margin-bottom: 7px;
-        justify-content: space-between;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .index-card-body-list a {
-        color: grey;
-        font-size: 15px;
-        width: 80%;
-    }
-
-    .index-card-body-list a:hover {
-        color: dodgerblue;
-    }
-
-    /*.index-card-footer {*/
-    /*font-size: 0.85em;*/
-    /*line-height: 1.6em;*/
-    /*border-top: 1px solid #eceff2;*/
-    /*padding-top: 5px;*/
-    /*margin-top: 20px;*/
-    /*}*/
-</style>
-
-<!-- 第一行展示轮播 -->
-<!--<div class="row">-->
-<!--    <style>-->
-
-<!--        .banner {-->
-<!--            /*height: 410px;*/-->
-<!--            height: 200px;-->
-<!--            width: 100%;-->
-<!--            position: relative;-->
-<!--            overflow: hidden;-->
-<!--        }-->
-<!--        .banner ul{-->
-<!--            padding: 0;-->
-<!--            margin: 0;-->
-<!--        }-->
-<!--        .banner ul li{-->
-<!--            top: 0;-->
-<!--            left: 0;-->
-<!--            list-style: none;-->
-<!--            position: absolute;-->
-<!--        }-->
-<!--        .banner ul li img{-->
-<!--            /*height: 410px;*/-->
-<!--            /*height: 200px;*/-->
-<!--            width: 100%;-->
-<!--            height: auto;-->
-<!--            display: block;-->
-<!--        }-->
-<!--        .ban-btn{-->
-<!--            width: 100%;-->
-<!--            position: absolute;-->
-<!--            /*top: 136px;*/-->
-<!--            top: 70px;-->
-<!--            z-index: 2;-->
-<!--        }-->
-<!--        .ban-btn a{-->
-<!--            display: inline-block;-->
-<!--            height: 60px;-->
-<!--            width: 35px;-->
-<!--            background: rgba(180,180,180,0.5);-->
-<!--            font-size: 25px;-->
-<!--            text-align: center;-->
-<!--            line-height: 60px;-->
-<!--            color: #fff;-->
-<!--            text-decoration: none;-->
-<!--        }-->
-<!--        .next-btn{-->
-<!--            float: right;-->
-<!--        }-->
-<!--        .prev-btn{-->
-<!--            float: left;-->
-<!--        }-->
-<!--        .ban-btn a:hover{-->
-<!--            background: rgba(100,100,100,0.5);-->
-<!--        }-->
-<!--        .indicator{-->
-<!--            width: 100%;-->
-<!--            position: absolute;-->
-<!--            text-align: center;-->
-<!--            bottom: 15px;-->
-<!--            z-index: 2;-->
-<!--        }-->
-<!--        .indicator a{-->
-<!--            display: inline-block;-->
-<!--            width: 20px;-->
-<!--            height: 5px;-->
-<!--            margin:0 3px;-->
-<!--            background: #fff;-->
-<!--        }-->
-<!--        .indicator-active{-->
-<!--            background: #FF8C00!important;-->
-<!--        }-->
-<!--    </style>-->
-
-<!--    <div class="banner" id="J_bg_ban">-->
-<!--        <ul>-->
-<!--            &lt;!&ndash;QCon & AS&ndash;&gt;-->
-<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
-<!--                <a href="https://sz2019.archsummit.com/track?utm_source=blog&utm_campaign=8&utm_medium=cxydd&utm_content=banner" target="_blank"><img src="/assets/banner/portrait-of-wild-bird.jpg" alt=""></a>-->
-<!--            </li>-->
-<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
-<!--                <a href="http://www.lubanjava.com/luban/index.html?=CXYDD" target="_blank"><img src="/assets/banner/食品banner.jpg" alt=""></a>-->
-<!--            </li>-->
-<!--            <li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">-->
-<!--                <a href="http://gk.link/a/103uO" target="_blank"><img src="/assets/geektime/banner_openrestry.jpg" alt=""></a>-->
-<!--            </li>-->
-<!--            &lt;!&ndash;<li style="background-color: darkgray;width: 100%;height: 100%;text-align: center;line-height: 410px;">&ndash;&gt;-->
-<!--            &lt;!&ndash;<p>扫描右侧二维码关注支持我，顺便推荐给你的朋友吧</p>&ndash;&gt;-->
-<!--            &lt;!&ndash;</li>&ndash;&gt;-->
-<!--            &lt;!&ndash;<li><a href="#"><img src="https://zsqosos.github.io/img/banner_02.jpg" alt=""/></a></li>&ndash;&gt;-->
-<!--            &lt;!&ndash;<li><a href="#"><img src="https://zsqosos.github.io/img/banner_03.jpg" alt=""/></a></li>&ndash;&gt;-->
-<!--        </ul>-->
-<!--        <div class="indicator" id="J_bg_indicator"></div>-->
-<!--        <div class="ban-btn clearfloat" id="J_bg_btn">-->
-<!--            <a class="next-btn fr" href="javascript:">&gt;</a><a class="prev-btn fl" href="javascript:">&lt;</a>-->
-<!--        </div>-->
-
-<!--    </div>-->
-
-<!--    <script type="text/javascript">-->
-<!--        $.carousel = {-->
-<!--            now : 0,                    //当前显示的图片索引-->
-<!--            hasStarted : false,         //是否开始轮播-->
-<!--            interval : null,            //定时器-->
-<!--            liItems : null,             //要轮播的li元素集合-->
-<!--            len : 0,                    //liItems的长度-->
-<!--            aBox : null,                //包含指示器的dom对象-->
-<!--            bBox : null,                //包含前后按钮的dom对象-->
-
-<!--            /**-->
-<!--             * 初始化及控制函数-->
-<!--             * @param bannnerBox string 包含整个轮播图盒子的id或class-->
-<!--             * @param aBox  string 包含指示器的盒子的id或class-->
-<!--             * @param btnBox string 包含前后按钮的盒子的id或class-->
-<!--             */-->
-<!--            startPlay : function(bannnerBox,aBox,btnBox) {-->
-<!--                //初始化对象参数-->
-<!--                var that = this;-->
-<!--                this.liItems = $(bannnerBox).find('ul').find('li');-->
-<!--                this.len = this.liItems.length;-->
-<!--                this.aBox = $(bannnerBox).find(aBox);-->
-<!--                this.bBox = $(bannnerBox).find(btnBox);-->
-<!--                //让第一张图片显示，根据轮播图数量动态创建指示器，并让第一个指示器处于激活状态，隐藏前后按钮-->
-<!--                this.liItems.first('li').css({'opacity': 1, 'z-index': 1}).siblings('li').css({'opacity': 0, 'z-index': 0});-->
-<!--                var aDom = '';-->
-<!--                for (var i = 0; i < this.len; i++){-->
-<!--                    aDom += '<a></a>';-->
-<!--                }-->
-<!--                $(aDom).appendTo(this.aBox);-->
-<!--                this.aBox.find('a:first').addClass("indicator-active");-->
-<!--                this.bBox.hide();-->
-<!--                //鼠标移入banner图时，停止轮播并显示前后按钮，移出时开始轮播并隐藏前后按钮-->
-<!--                $(bannnerBox).hover(function (){-->
-<!--                    that.stop();-->
-<!--                    that.bBox.fadeIn(200);-->
-<!--                }, function (){-->
-<!--                    that.start();-->
-<!--                    that.bBox.fadeOut(200);-->
-<!--                });-->
-<!--                //鼠标移入指示器时，显示对应图片，移出时继续播放-->
-<!--                this.aBox.find('a').hover(function (){-->
-<!--                    that.stop();-->
-<!--                    var out = that.aBox.find('a').filter('.indicator-active').index();-->
-<!--                    that.now = $(this).index();-->
-<!--                    if(out!=that.now) {-->
-<!--                        that.play(out, that.now)-->
-<!--                    }-->
-<!--                }, function (){-->
-<!--                    that.start();-->
-<!--                });-->
-<!--                //点击左右按钮时显示上一张或下一张-->
-<!--                $(btnBox).find('a:first').click(function(){that.next()});-->
-<!--                $(btnBox).find('a:last').click(function(){that.prev()});-->
-<!--                //开始轮播-->
-<!--                this.start()-->
-<!--            },-->
-<!--            //前一张函数-->
-<!--            prev : function (){-->
-<!--                var out = this.now;-->
-<!--                this.now = (&#45;&#45;this.now + this.len) % this.len;-->
-<!--                this.play(out, this.now);-->
-<!--            },-->
-<!--            //后一张函数-->
-<!--            next : function (){-->
-<!--                var out = this.now;-->
-<!--                this.now = ++this.now % this.len;-->
-<!--                this.play(out, this.now);-->
-<!--            },-->
-<!--            /**-->
-<!--             * 播放函数-->
-<!--             * @param out number 要消失的图片的索引值-->
-<!--             * @param now number 接下来要轮播的图的索引值-->
-<!--             */-->
-<!--            play : function (out, now){-->
-<!--                this.liItems.eq(out).stop().animate({opacity:0,'z-index':0},500).end().eq(now).stop().animate({opacity:1,'z-index':1},500);-->
-<!--                this.aBox.find('a').removeClass('indicator-active').eq(now).addClass('indicator-active');-->
-<!--            },-->
-<!--            //开始函数-->
-<!--            start : function(){-->
-<!--                if(!this.hasStarted) {-->
-<!--                    this.hasStarted = true;-->
-<!--                    var that = this;-->
-<!--                    this.interval = setInterval(function(){-->
-<!--                        that.next();-->
-<!--                    },2000);-->
-<!--                }-->
-<!--            },-->
-<!--            //停止函数-->
-<!--            stop : function (){-->
-<!--                clearInterval(this.interval);-->
-<!--                this.hasStarted = false;-->
-<!--            }-->
-<!--        };-->
-
-<!--        $(function(){-->
-<!--            $.carousel.startPlay('#J_bg_ban','#J_bg_indicator','#J_bg_btn');-->
-<!--        })-->
-<!--    </script>-->
-<!--</div>-->
-<!--<style type="text/css">
-    /*border-bottom: 1px solid #F0F0F0;*/
-    .huadong {width: 60rem;height:4rem;padding: 0.5rem 0 0.3rem 0; border-bottom: 1px solid #F0F0F0; position:relative;font: 12px/1.5 "Hiragino Sans GB","Microsoft YaHei",simsun;margin:0 auto;}
-    .huadong .huabox {  margin:0 auto; width: 80%; line-height: 4rem;}
-    .huadong .hdimg {float:left;line-height:3.5rem;}
-    .huadong .hdimg img { width: 100%; vertical-align:middle;}
-    .huadong h5 {font-size:1rem;float:left; line-height: 2.2rem; margin: 0.8rem 0 0 0; }
-    .huadong .gg_more { float: left;}
-    .huadong .gg_more a { font-size: 0.8rem; text-decoration:none;}
-
-    .huadong .notice_active {
-        float: left;
-        width: 55%;
-        height: 4rem;
-        padding: 0;
-        overflow: hidden;
-        position: relative;
-    }
-    .huadong .notice_active li{list-style-type:none;line-height: 2.4rem;overflow: hidden;}
-    /*.huadong .notice_active li.notice_active_ch {}*/
-    .huadong .notice_active li.notice_active_ch span {color:#656972;font-size:1rem;display: block;overflow: hidden; width:80%;float: left;
-        overflow: hidden;margin:0 0 2rem 0;}
-    .huadong .gg_more .news_ck {
-        float: left;
-        margin: 0 1rem 0 1rem;
-        color: #888;
-        width: 5rem;
-        height: 2rem;
-        line-height: 2rem;
-        display: block;
-        border: 1px solid #656972;
-        text-align: center;
-        border-radius: 0.7rem;
-        font-size: 0.8rem;
-        margin-top: 1rem;
-    }
-    .huadong .gg_more .news_more {
-
-    }
-    .huadong .notice_active li.notice_active_ch em {text-align:right;float:right;color:#888;font-size:0.8rem;font-style:normal;  }
-</style>
-<script type="text/javascript">
-    function timer(opj){
-        $(opj).find('ul').animate({
-            marginTop : "-3.5rem"
-        },500,function(){
-            $(this).css({marginTop : "0.7rem"}).find("li:first").appendTo(this);
-        })
-    }
-    $(function(){
-        var num = $('.notice_active').find('li').length;
-        if(num > 1){
-            var time=setInterval('timer(".notice_active")',3500);
-            $('.gg_more a').mousemove(function(){
-                clearInterval(time);
-            }).mouseout(function(){
-                time = setInterval('timer(".notice_active")',3500);
-            });
-        }
-
-        $(".news_ck").click(function(){
-            location.href = $(".notice_active .notice_active_ch").children(":input").val();
-        })
-    });
-</script>
-<div class="huadong">
-    <div class="huabox">
-        <div class="hdimg"><img src="/assets/scroll/lingdang.png"></div>
-        <h5>【公告】</h5>
-        <div class="notice_active">
-            <ul>
-                <li class="notice_active_ch">
-                    <span>滑动轮播1a去哦我我iwoi我i滑动轮播3滑</span>
-
-                    <em>2017-01-20</em>
-                </li>
-                <li class="notice_active_ch">
-                    <span>滑动轮播2滑动轮播3</span>
-
-                    <em>2017-01-20</em>
-                </li>
-                <li class="notice_active_ch">
-                    <span>站长素材文字滚动播放</span>
-
-                    <em>2017-01-20</em>
-                </li>
-
-            </ul>
-
-        </div>
-
-        <div class="gg_more">
-            <a class="news_ck" href="javascript:void(0)">查看详情</a>
-            <a title="news_more" href="#">更多+</a>
-        </div>
-    </div>
-</div>-->
-<!-- 第二行展示推荐阅读和最新发布内容卡片 -->
-<div class="row">
-    <div class="col-md-6">
-       
-    
-
-    
-    <div class="index-card">
-        <div class="index-card-head">
-            <h3>推荐阅读</h3>
-        </div>
-        <div class="index-card-body">
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
-        <a href="/2019/07/29/15-chrome-plugins/" target="_blank" itemprop="url">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/03</span>
-        <a href="/2019/07/03/excel-vba-join/" target="_blank" itemprop="url">用VBA处理Excel, 合并两个Excel文件</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
-        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
-        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
-        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
-        <a href="/2019/08/07/jdk1-8-source-analysis-02/" target="_blank" itemprop="url">JDK1.8源码分析02之阅读源码顺序</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
-        <a href="/2019/08/07/jdk1-8-source-analysis-03/" target="_blank" itemprop="url">JDK1.8源码分析03之idea搭建源码阅读环境</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/06/27</span>
-        <a href="/2019/06/27/my-first-blog/" target="_blank" itemprop="url">我的个人博客搭建之旅</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/18</span>
-        <a href="/2019/07/18/springboot-01-helloworld/" target="_blank" itemprop="url">springboot零基础进阶实战教程系列</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/01</span>
-        <a href="/2019/07/01/summary-of-common-sql/" target="_blank" itemprop="url">常用SQL总结</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/10/10</span>
-        <a href="/2019/10/10/spring-boot-dubbo-nacos-demo/" target="_blank" itemprop="url">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
-</div>
-            
-        </div>
-        <div class="index-card-footer" style="text-align: right;">
-            <a href="/archives">查看更多</a>
-        </div>
-    </div>
-        
-
-    </div>
-    <div class="col-md-6">
-        
-    <div class="index-card">
-        <div class="index-card-head">
-            <h3>最新发布</h3>
-        </div>
-        <div class="index-card-body">
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/10/10</span>
-        <a href="/2019/10/10/spring-boot-dubbo-nacos-demo/" target="_blank" itemprop="url">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
-        <a href="/2019/08/07/jdk1-8-source-analysis-03/" target="_blank" itemprop="url">JDK1.8源码分析03之idea搭建源码阅读环境</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/07</span>
-        <a href="/2019/08/07/jdk1-8-source-analysis-02/" target="_blank" itemprop="url">JDK1.8源码分析02之阅读源码顺序</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/08/06</span>
-        <a href="/2019/08/06/jdk1-8-source-analysis-01/" target="_blank" itemprop="url">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/29</span>
-        <a href="/2019/07/29/15-chrome-plugins/" target="_blank" itemprop="url">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/18</span>
-        <a href="/2019/07/18/springboot-01-helloworld/" target="_blank" itemprop="url">springboot零基础进阶实战教程系列</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
-        <a href="/2019/07/04/hexo-md-mathjax/" target="_blank" itemprop="url">Hexo | markdown中集成mathjax能编写数学公式</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/04</span>
-        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/" target="_blank" itemprop="url">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/03</span>
-        <a href="/2019/07/03/excel-vba-join/" target="_blank" itemprop="url">用VBA处理Excel, 合并两个Excel文件</a>
-</div>
-            
-                <div class="index-card-body-list">
-        <span style="font-size: 12px;color:#aaa;margin-right: 5px;">19/07/01</span>
-        <a href="/2019/07/01/summary-of-common-sql/" target="_blank" itemprop="url">常用SQL总结</a>
-</div>
-            
-        </div>
-        <div class="index-card-footer" style="text-align: right;">
-            <a href="/archives">查看更多</a>
-        </div>
-    </div>
-
-    </div>
-</div>
-
-<nav id="page-nav">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
-</nav>
-
-
-    <article id="post-spring-boot-dubbo-nacos-demo" class="article article-type-post" itemscope itemprop="blogPost">
+            <section id="main" class="col-lg-9"><article id="post-spring-boot-dubbo-nacos-demo" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
         
             <header class="article-header">
                 
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/10/10/spring-boot-dubbo-nacos-demo/">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
+        <h1 class="article-title" itemprop="name">
+            Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩
         </h1>
     
 
@@ -730,6 +250,11 @@
         <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>, <a class="tag-link" href="/tags/dubbo/">dubbo</a>, <a class="tag-link" href="/tags/nacos/">nacos</a>
     </div>
 
+                        
+                            <span class="fa-wrap">
+                <i class="fa fa-eye"></i>
+                <span id="busuanzi_value_page_pv"></span>
+            </span>
                         
                     </div>
                 
@@ -819,698 +344,143 @@
         
         </div>
         
+        <footer class="article-footer">
+            <div class="col-sm-10">
+                <div>
+                    <b>本文链接</b>：<a href="/2019/10/10/spring-boot-dubbo-nacos-demo/">Spring Boot 2.x ��������������Dubbo 2.7.3+Nacos1.1.3�����°棩</a>
+                </div>
+                <div>
+                    
+                        转载声明：本博客由方子龙创作，采用 <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/" target="_blank"> CC BY 3.0 CN </a> 许可协议。可自由转载、引用，但需署名作者且注明文章出处。如转载至微信公众号，请在文末添加作者公众号二维码。
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <div class="col-sm-2">
+                <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://www.raysonblog.cn/2019/10/10/spring-boot-dubbo-nacos-demo/" data-id="ck1k3kt96000094stozt08eta" class="article-share-link"><i class="fa fa-share"></i>Compartir</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+                
+    
+
+            </div>
+        </footer>
+        
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/08/07/jdk1-8-source-analysis-03/" id="article-nav-older" class="btn btn-default article-nav-link-wrap" title="JDK1.8源码分析03之idea搭建源码阅读环境">
+            <strong class="article-nav-caption hidden-lg">下一篇</strong>
+            <span class="article-nav-title">JDK1.8源码分析03之idea搭建源码阅读环境</span>
+            <i class="fa fa-angle-right fa-fw"></i>
+        </a>
+    
+</nav>
+
+
     
 </article>
 
     
-
-    <article id="post-jdk1-8-source-analysis-03" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
+    <section id="comments">
     
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/08/07/jdk1-8-source-analysis-03/">JDK1.8源码分析03之idea搭建源码阅读环境</a>
-        </h1>
-    
+        <div class="gitalk">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
+    <script type="text/javascript">
+        var gitalk = new Gitalk({
+            clientID: '60c4e5ce6224a633aac9',
+            clientSecret: '0107cb5774f4942a00972cefbcddb7c5b665c91e',
+            repo: 'blog-comments',
+            owner: 'raysonfang',
+            admin: ['raysonfang'],
+            id: 'Thu Oct 10 2019 10:39:13 GMT+0800',      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
 
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
+        gitalk.render('gitalk-container')
+    </script>
+</div>
 
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/08/07/jdk1-8-source-analysis-03/">
-            <time datetime="2019-08-07T08:19:01.000Z" itemprop="datePublished">2019-08-07</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/08/07/jdk1-8-source-analysis-03/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/源码分析/">源码分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/源码分析/">源码分析</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><blockquote>
-<p>序言：上一节说了阅读源码的顺序，有了一个大体的方向，咱们就知道该如何下手。接下来，就要搭建一个方便阅读源码及debug的环境。有助于跟踪源码的调用情况。</p>
-</blockquote>
-<p>目前新开发的项目， 大多数都是基于JDK1.8开发，所以我选择该版本进行源码分析。</p>
-<p>JDK1.8版本号：jdk1.8.0_151<br></p></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/08/07/jdk1-8-source-analysis-03/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
 
     
+    </section>
 
-    <article id="post-jdk1-8-source-analysis-02" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/08/07/jdk1-8-source-analysis-02/">JDK1.8源码分析02之阅读源码顺序</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/08/07/jdk1-8-source-analysis-02/">
-            <time datetime="2019-08-07T08:16:22.000Z" itemprop="datePublished">2019-08-07</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/08/07/jdk1-8-source-analysis-02/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/源码分析/">源码分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/源码分析/">源码分析</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><blockquote>
-<p>序言：阅读JDK源码应该从何开始，有计划，有步骤的深入学习呢？</p>
-</blockquote>
-<p>下面就分享一篇比较好的学习源码顺序的文章，给了我们再阅读源码时，一个指导性的标志，而不会迷失方向。</p>
-<p>很多java开发的小伙伴都会阅读jdk源码，然而确不知道应该从哪读起。有些零零散散的学习，知识与知识之间没有相互联系起来，不成知识体系。以下为小编整理的通常所需阅读的源码范围。<br>标题为包名，后面序号为优先级1-4，优先级递减</p>
-<p>1、java.lang<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1) Object 1</span><br><span class="line">2) String 1</span><br><span class="line">3) AbstractStringBuilder 1</span><br><span class="line">4) StringBuffer 1</span><br><span class="line">5) StringBuilder 1</span><br><span class="line">6) Boolean 2</span><br><span class="line">7) Byte 2</span><br><span class="line">8) Double 2</span><br><span class="line">9) Float 2</span><br><span class="line">10) Integer 2</span><br><span class="line">11) Long 2</span><br><span class="line">12) Short 2</span><br><span class="line">13) Thread 2</span><br><span class="line">14) ThreadLocal 2</span><br><span class="line">15) Enum 3</span><br><span class="line">16) Throwable 3</span><br><span class="line">17) Error 3</span><br><span class="line">18) Exception 3</span><br><span class="line">19) Class 4</span><br><span class="line">20) ClassLoader 4</span><br><span class="line">21) Compiler 4</span><br><span class="line">22) System 4</span><br><span class="line">23) Package 4</span><br><span class="line">24) Void 4</span><br></pre></td></tr></table></figure></p></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/08/07/jdk1-8-source-analysis-02/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-jdk1-8-source-analysis-01" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/08/06/jdk1-8-source-analysis-01/">JDK1.8源码分析01之学习建议（可以延伸到其他源码学习）</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/08/06/jdk1-8-source-analysis-01/">
-            <time datetime="2019-08-06T02:27:30.000Z" itemprop="datePublished">2019-08-06</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/08/06/jdk1-8-source-analysis-01/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/源码分析/">源码分析</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/源码分析/jdk1-8/">jdk1.8</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/源码分析/">源码分析</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><blockquote>
-<p>序言：目前准备看一看源码，来提升自己的技术实力。同时现在好多面试官都喜欢问源码，问你是否读过JDK源码等等？<br>针对如何阅读源码，也请教了我的老师。下面就先来看看老师的回答，也许会有帮助呢。</p>
-</blockquote>
-<p>我很尊敬的一位老师，他姓唐，算是我入门编程的启蒙老师，有10多年的C/C++开发经验，我有幸跟着老师的C++/C课程，自学完，而且还学了数据结构。他的讲课很有风格，幽默风趣，有条有理，深入浅出。</p>
-<p>不过后来，我决定走Java这条不归路。</p>
-<p>我向老师请教了一个问题：<strong>关于如何阅读源码的问题？不乏味，思路清晰。就像他的课程一样，基本上很少会有疲倦，枯燥的感觉。</strong></p>
-<p><strong>唐老师，回答道：读源码是要建立在你的基础经验足够的情况下。否则很容易看不懂</strong></p>
-<p>我继续又问：<strong>那对于刚刚想尝试去读源码的同学来说，有没有一些建议呢？我尝试着读了一些，但感觉很无厘头。</strong></p>
-<p>唐老师，回答道： <strong>读源码是要读和你水平相匹配的。好多人好高骛远，简单的，能读懂的不屑， 想读的，又读不懂，高不成低不就。我的建议是从教学型项目读起。</strong></p>
-<p>小插曲：有位朋友说，源码写的就一定比我写的好吗？ 哈哈，这回答倒也是刷新我的认知。</p>
-<p><strong>另外一位朋友有举例说： 如果读redis源码， 我会先看一本讲Redis原理的书，然后再看源码。</strong></p>
-<p>以上就是我这次请教的过程，总结一下：先懂原理，知道一个全局框架，再结合教学型项目或自己写些小案例，再深入源码。</p></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/08/06/jdk1-8-source-analysis-01/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-15-chrome-plugins" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/29/15-chrome-plugins/">15款好用超赞的chrome插件， 开发者们的必备工具库~</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/29/15-chrome-plugins/">
-            <time datetime="2019-07-29T06:27:43.000Z" itemprop="datePublished">2019-07-29</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/29/15-chrome-plugins/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/精美工具/">精美工具</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/精美工具/">精美工具</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><p>今天推荐一波Chrome插件干货。这些插件带给我开发效率上的提升。所以在这里整理一下，分享给朋友们。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7253165-2b24e88e3eadbe7d?imageMogr2/auto-orient/strip" alt></p>
-<p>作为一名程序开发者，推荐一波常用的chrome插件，用了就舍不得丢，包括免费翻墙工具，github便捷代码浏览，截图，广告拦截，SQL格式化等等。</p>
-<blockquote>
-<p>1.谷歌访问助手<br>2.SourceGraph<br>3.The Great Suspender<br>4.Adblock<br>5.JSONView<br>6.二维码生成<br>7.掘金<br>8.Octotree<br>9.Scrn.li<br>10.SQL Format<br>11.简悦<br>12.Visual Inspector By CanvasFlip<br>13.ShowIp<br>14.tampermonkey<br>15.Google 翻译<br></p></blockquote></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/07/29/15-chrome-plugins/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-springboot-01-helloworld" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/18/springboot-01-helloworld/">springboot零基础进阶实战教程系列</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/18/springboot-01-helloworld/">
-            <time datetime="2019-07-18T05:53:03.000Z" itemprop="datePublished">2019-07-18</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/18/springboot-01-helloworld/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            <blockquote>
-<p>序言：Spring Boot是在Spring基础上实现了自动配置的基础框架，快速帮助Spring整合各种第三方框架，让项目中的配置化繁为简，大幅提高开发效率。</p>
-</blockquote>
-
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-hexo-md-mathjax" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/04/hexo-md-mathjax/">Hexo | markdown中集成mathjax能编写数学公式</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/04/hexo-md-mathjax/">
-            <time datetime="2019-07-04T14:37:23.000Z" itemprop="datePublished">2019-07-04</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/04/hexo-md-mathjax/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Hexo/">Hexo</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Hexo/markdown/">markdown</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Hexo/">Hexo</a>, <a class="tag-link" href="/tags/mathJax/">mathJax</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h2 id="一-前言"><a href="#一-前言" class="headerlink" title="一. 前言"></a>一. 前言</h2><p>我经常在简书上用MarkDown写文章，今天，突然有个想法，就是想改变一下文字的颜色，让文章看起来酷炫一点，更具有吸引力。毕竟纯黑色的技术性文章看着蛮枯燥，偶尔来点颜色来润润调也很不错额😁</p>
-<p>经过一番折腾，简书还真可以这样玩，突然感觉挺高大上的。下面就是在简书中的MarkDown编辑器中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;居中&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
-<p>渲染后的效果：</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/7253165-45d269301103491a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="渲染后的效果"></p>
-<p>看着上面奇怪的语法，对于不熟悉MathJax的我来说，开始以为是什么黑科技，都能被广大网友发现，发自内心的崇拜。</p>
-<p>后来不断的深挖，通过调试工具查看网页代码，发现点端倪，有一个“math”单词, 直译“数学”，我大概明白点了，简书Markdown支持数学公式的渲染语法。</p>
-<p>最后, 通过查找资料，找到Markdown中支持数学公式的语法，跟简书中的语法大体一致。</p>
-<p>于是乎，我又在自己搭建的博客上试了一番，发现不行。所以也准备给自己的博客加上这个功能呢。</p>
-<p>那先看看整合后的效果吧<br>效果：<br>$$\color{green}{\Large\mathbf{Hello!\ 我是MathJax}}$$</p>
-<p>代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$$\color&#123;green&#125;&#123;\Large\mathbf&#123;Hello!\ 我是MathJax&#125;&#125;$$</span><br></pre></td></tr></table></figure></p>
-<p>接下来就说说整合过程，如何也给自己的博客添加上数学公式的渲染。</p></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/07/04/hexo-md-mathjax/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-spring-boot-all-01-easy-web-application" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/04/spring-boot-all-01-easy-web-application/">『趣学Spring Boot 2.x系列01』初识Spring Boot</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">
-            <time datetime="2019-07-04T05:41:48.000Z" itemprop="datePublished">2019-07-04</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Spring-Boot/">Spring Boot</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Spring-Boot/">Spring Boot</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h2 id="一-学习之前先思考3个问题，带着问题去寻找答案"><a href="#一-学习之前先思考3个问题，带着问题去寻找答案" class="headerlink" title="一. 学习之前先思考3个问题，带着问题去寻找答案"></a>一. 学习之前先思考3个问题，带着问题去寻找答案</h2><blockquote>
-<ul>
-<li>1.简要说明Spring Boot是什么，有什么特点。</li>
-<li>2.如何初始化一个Spring Boot工程，有哪些工具可以快速初始化Spring Boot工程呢？</li>
-<li>3.Spring Boot的项目工程结构有什么样的特点呢？</li>
-</ul>
-</blockquote></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/07/04/spring-boot-all-01-easy-web-application/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-excel-vba-join" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/03/excel-vba-join/">用VBA处理Excel, 合并两个Excel文件</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/03/excel-vba-join/">
-            <time datetime="2019-07-03T14:13:23.000Z" itemprop="datePublished">2019-07-03</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/03/excel-vba-join/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/Excel/">Excel</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Excel/VBA/">VBA</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/VBA/">VBA</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            <p><h1 id="一-需求背景"><a href="#一-需求背景" class="headerlink" title="一. 需求背景"></a>一. 需求背景</h1><p>公司需要合并两个Excel文件，这两个文件的特点就是，文件中分多个指标，需要按指标项不同，合并表格数据。</p>
-<h1 id="二-方案讨论"><a href="#二-方案讨论" class="headerlink" title="二. 方案讨论"></a>二. 方案讨论</h1><p>在最开始的讨论的时候，就准备用VBA来实现，基于Excel的开发者工具， 可以自己写代码实现宏。这个缺点也很明显，就是代码维护起来比较麻烦，而且需要教他们使用，而且是面向代码，是很头痛的事。</p>
-<p>接下来， 我自己思考的方案是用Python来做此需求，因为之前我有简单的学过， 也知道Python在处理数据方面，有很大的优势。而且语法还简单。但用Python处理Excel的实践一次也还没有，所以心里面还是很没底。准备用它来试试手。</p>
-<p>后来， boss也安排了同事跟我一起来看看这个需求，有没有什么方案可行。准备利用现有的系统，可以做一个功能，放到系统中，而且也好维护。大家开发这个系统应该很快就能熟悉功能和代码。所以维护性还是很高，而对于用户来说，也基本上是零代码学习。</p>
-<p>讨论了这些过后，当然得跟boss确定一下，看选用哪种，后来Boss选了VBA来实现。</p>
-<p>问我先看看能不能做，实现起来是不是很难。我得应下来啊！<br></p></p>
-            <p class="article-more-link" style="text-align: center">
-                <a href="/2019/07/03/excel-vba-join/">阅读更多</a>
-            </p>
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <article id="post-summary-of-common-sql" class="article article-type-post" itemscope itemprop="blogPost">
-    <div class="article-inner">
-        
-        
-            <header class="article-header">
-                
-    
-        <h1 itemprop="name">
-            <a class="article-title" href="/2019/07/01/summary-of-common-sql/">常用SQL总结</a>
-        </h1>
-    
-
-                
-                    <div class="article-meta">
-                        
-    <div>
-        <span class="label label-success" style="font-size: 14px">原创</span>
-    </div>
-
-                        
-    <div class="article-date">
-        <i class="fa fa-calendar"></i>
-        <a href="/2019/07/01/summary-of-common-sql/">
-            <time datetime="2019-07-01T01:35:14.000Z" itemprop="datePublished">2019-07-01</time>
-        </a>
-    </div>
-
-
-                        
-    <div class="article-author">
-        <i class="fa fa-user"></i>
-        <a href="/2019/07/01/summary-of-common-sql/">
-            方子龙
-        </a>
-    </div>
-
-
-                        
-    <div class="article-category">
-    	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/categories/SQL/">SQL</a>
-    </div>
-
-                        
-    <div class="article-tag">
-        <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/SQL/">SQL</a>
-    </div>
-
-                        
-                    </div>
-                
-            </header>
-        
-        
-        <div class="article-entry" itemprop="articleBody">
-        
-            
-            
-        
-        
-        </div>
-        
-    </div>
-    
-</article>
-
-    
-
-    <nav id="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页 &raquo;</a>
-    </nav>
 </section>
             
                 <aside id="sidebar" class="col-lg-3">
